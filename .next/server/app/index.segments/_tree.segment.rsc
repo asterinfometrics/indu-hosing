@@ -12,4 +12,4 @@
 :HL["https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap","style"]
 :HL["/_next/static/chunks/0zctgnn09elij.css","style"]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"Xh3mtBw7O1JGnbjndy7iQ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"WDa9YAjWQj3r89rDO7UDZ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
