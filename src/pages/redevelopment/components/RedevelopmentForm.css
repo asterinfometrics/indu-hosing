@@ -1,0 +1,336 @@
+/* ==========================================================================
+   Redevelopment: Tell us about your rebuild Form Section
+   ========================================================================== */
+
+.redevelopment-form-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+}
+
+.redevelopment-form-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header */
+.redevelopment-form-header {
+  margin-bottom: 40px;
+}
+
+.redevelopment-form-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary, #0A63AD);
+  margin-bottom: 16px;
+}
+
+.redevelopment-form-badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  border-radius: 1px;
+  display: inline-block;
+}
+
+.redevelopment-form-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark, #1A1A17);
+  letter-spacing: -0.015em;
+  margin: 0;
+  line-height: 1.25;
+}
+
+/* 2-Column Grid */
+.redevelopment-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 48px;
+  align-items: stretch;
+}
+
+/* Left Image Column */
+.redevelopment-form-image-col {
+  width: 100%;
+  display: flex;
+}
+
+.redevelopment-form-image-card {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  background-color: #f5f5f5;
+  min-height: 520px;
+}
+
+.redevelopment-form-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Form Column */
+.redevelopment-form-card {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 24px;
+  padding: 44px 44px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redevelopment-property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.redevelopment-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+.redevelopment-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.redevelopment-form-field.full-width {
+  grid-column: span 2;
+}
+
+.redevelopment-form-label {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text-dark, #1A1A17);
+  line-height: 1.3;
+}
+
+.redevelopment-form-input,
+.redevelopment-form-select,
+.redevelopment-form-textarea {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ECECEC;
+  border-radius: 8px;
+  padding: 13px 18px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-dark, #1A1A17);
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.redevelopment-form-input::placeholder,
+.redevelopment-form-textarea::placeholder {
+  color: #A0AEC0;
+  font-size: 13.5px;
+}
+
+.redevelopment-select-placeholder {
+  color: #A0AEC0;
+}
+
+.redevelopment-form-input:focus,
+.redevelopment-form-select:focus,
+.redevelopment-form-textarea:focus {
+  border-color: var(--color-primary, #0A63AD);
+  box-shadow: 0 0 0 3px rgba(10, 99, 173, 0.08);
+}
+
+/* Custom Select with Arrow */
+.redevelopment-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.redevelopment-form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 44px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.redevelopment-select-arrow {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Textarea */
+.redevelopment-form-textarea {
+  padding: 14px 18px;
+  min-height: 100px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* Actions Row - Right Aligned */
+.redevelopment-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.redevelopment-form-field-error {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #dc2626;
+  font-weight: 500;
+  margin-top: 4px;
+  display: block;
+}
+
+.redevelopment-form-input.is-invalid,
+.redevelopment-form-select.is-invalid,
+.redevelopment-form-textarea.is-invalid {
+  border-color: #dc2626 !important;
+  background-color: #fff8f8;
+}
+
+.redevelopment-submit-btn {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  border-radius: 12px;
+  padding: 6px 6px 6px 22px;
+  cursor: pointer;
+}
+
+/* Success Message */
+.redevelopment-form-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.redevelopment-success-icon-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(10, 99, 173, 0.1);
+  color: var(--color-primary, #0A63AD);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.redevelopment-form-success h3 {
+  font-family: var(--font-title);
+  font-size: 24px;
+  color: var(--text-dark, #1A1A17);
+  margin-bottom: 8px;
+}
+
+.redevelopment-form-success p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-gray, #757575);
+  max-width: 440px;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .redevelopment-form-section {
+    padding: 60px 32px 70px;
+  }
+
+  .redevelopment-form-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .redevelopment-form-image-card {
+    min-height: 380px;
+    height: 420px;
+  }
+
+  .redevelopment-form-card {
+    padding: 36px 32px;
+  }
+
+  .redevelopment-form-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .redevelopment-form-section {
+    padding: 50px 24px 60px;
+  }
+
+  .redevelopment-form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .redevelopment-form-field.full-width {
+    grid-column: span 1;
+  }
+
+  .redevelopment-form-title {
+    font-size: 32px;
+  }
+
+  .redevelopment-form-image-card {
+    min-height: 300px;
+    height: 340px;
+    border-radius: 18px;
+  }
+
+  .redevelopment-form-card {
+    border-radius: 18px;
+    padding: 28px 20px;
+  }
+
+  .redevelopment-form-actions {
+    justify-content: stretch;
+  }
+
+  .redevelopment-submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .redevelopment-form-title {
+    font-size: 28px;
+  }
+}

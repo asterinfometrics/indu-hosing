@@ -1,0 +1,274 @@
+.about-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  color: var(--text-dark, #1A1A17);
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Top Header */
+.about-header {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.about-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+}
+
+.about-tag-square {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  display: inline-block;
+  border-radius: 1px;
+}
+
+.about-tag-text {
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary, #0A63AD);
+  letter-spacing: -0.01em;
+}
+
+.about-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark, #1A1A17);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  max-width: 880px;
+  margin: 0 0 20px 0;
+}
+
+.about-description {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--text-gray);
+  max-width: 800px;
+  margin: 0 0 40px 0;
+}
+
+.about-cta-btn {
+  border-radius: 8px;
+  padding: 12px 24px;
+  height: auto;
+  min-height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+/* 3-Column Bento Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.about-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Image Card */
+.about-image-card {
+  width: 100%;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  position: relative;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.about-image-card:hover .about-image {
+  transform: scale(1.03);
+}
+
+/* Stat Card */
+.about-stat-card {
+  position: relative;
+  width: 100%;
+  height: 142px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg,
+      var(--color-primary, #0A63AD) 50%,
+      var(--color-primary-light, #41A6EF) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.about-stat-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: var(--pattern-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.80;
+  pointer-events: none;
+}
+
+.about-stat-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 20px;
+}
+
+.about-stat-number {
+  font-family: var(--font-body);
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.about-stat-label {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.2;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 70px 32px;
+  }
+
+  .about-header {
+    grid-template-columns: 180px 1fr;
+    gap: 28px;
+  }
+
+  .about-image-card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .about-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .about-column {
+    gap: 16px;
+  }
+
+  .about-column-reverse-mobile {
+    flex-direction: column-reverse;
+  }
+
+  .about-image-card {
+    height: 280px;
+  }
+
+  .about-stat-card {
+    height: 136px;
+  }
+
+  .about-stat-number {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .about-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-image-card {
+    height: 220px;
+  }
+
+  .about-stat-card {
+    height: 120px;
+    padding: 16px;
+  }
+
+  .about-stat-number {
+    font-size: 32px;
+  }
+
+  .about-stat-label {
+    font-size: 14px;
+  }
+}

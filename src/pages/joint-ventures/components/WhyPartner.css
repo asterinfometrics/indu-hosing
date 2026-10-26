@@ -1,0 +1,319 @@
+/* ==========================================================================
+   Joint Ventures: Why Partner With Indu Housing Section
+   ========================================================================== */
+
+.why-partner-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.why-partner-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Top Badge & Divider Line Row
+   ========================================================================== */
+
+.why-partner-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.why-partner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary, #0A63AD);
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.why-partner-badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  border-radius: 2px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.why-partner-badge-line {
+  flex: 1;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+/* ==========================================================================
+   Header Row
+   ========================================================================== */
+
+.why-partner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.why-partner-header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.why-partner-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.why-partner-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 440px;
+  gap: 20px;
+}
+
+.why-partner-subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.why-partner-cta-btn {
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  border-radius: 10px;
+  padding: 6px 6px 6px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Bottom Content Grid: Image + 2x2 Stats
+   ========================================================================== */
+
+.why-partner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.why-partner-image-card {
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  background-color: #f1f5f9;
+}
+
+.why-partner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 2x2 Stat Cards Grid */
+.why-partner-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.why-partner-stat-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ECEEF1;
+  border-radius: 18px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 210px;
+  box-sizing: border-box;
+}
+
+
+.why-partner-stat-number {
+  font-family: var(--font-title);
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin-bottom: 30px;
+}
+
+.why-partner-stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.why-partner-stat-title {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.why-partner-stat-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-gray);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .why-partner-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .why-partner-header-right {
+    max-width: 100%;
+  }
+
+  .why-partner-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .why-partner-image-card {
+    min-height: 340px;
+    max-height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-partner-section {
+    padding: 40px 20px;
+  }
+
+  .why-partner-badge-row {
+    margin-bottom: 20px;
+  }
+
+  .why-partner-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .why-partner-header {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .why-partner-subtitle {
+    font-size: 15px;
+  }
+
+  .why-partner-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .why-partner-stat-card {
+    min-height: 170px;
+    padding: 24px 20px;
+  }
+
+  .why-partner-stat-number {
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-partner-section {
+    padding: 40px 20px;
+  }
+
+  .why-partner-badge-row {
+    margin-bottom: 20px;
+  }
+
+  .why-partner-badge {
+    font-size: 16px;
+  }
+
+  .why-partner-header {
+    gap: 16px;
+  }
+
+  .why-partner-title {
+    font-size: 24px;
+  }
+
+  .why-partner-subtitle {
+    font-size: 16px;
+  }
+
+  .why-partner-grid {
+    gap: 24px;
+  }
+
+  .why-partner-image-card {
+    min-height: 220px;
+    max-height: 260px;
+    border-radius: 14px;
+  }
+
+  .why-partner-stat-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+    min-height: auto;
+  }
+
+  .why-partner-stat-number {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .why-partner-stat-title {
+    font-size: 16px;
+  }
+
+  .why-partner-stat-desc {
+    font-size: 14px;
+  }
+
+  .why-partner-stat-info {
+    gap: 4px;
+  }
+}

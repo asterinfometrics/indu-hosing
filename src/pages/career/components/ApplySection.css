@@ -1,0 +1,361 @@
+/* ==========================================================================
+   Career: Apply to Join Our Team Section
+   ========================================================================== */
+
+.apply-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  color: var(--text-dark, #1A1A17);
+}
+
+.apply-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header: Tag + Title */
+.apply-header {
+  margin-bottom: 50px;
+}
+
+.apply-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.apply-tag-square {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  display: inline-block;
+  border-radius: 1.5px;
+}
+
+.apply-tag-text {
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary, #0A63AD);
+  letter-spacing: -0.01em;
+}
+
+.apply-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark, #1A1A17);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+/* 2-Column Grid Layout */
+.apply-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 48px;
+  align-items: stretch;
+}
+
+/* Left: Image Column */
+.apply-image-col {
+  width: 100%;
+  display: flex;
+}
+
+.apply-image-wrapper {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  background-color: #f5f5f5;
+  min-height: 520px;
+}
+
+.apply-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right: Form Card Column */
+.apply-form-col {
+  width: 100%;
+  display: flex;
+}
+
+.apply-form-card {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 24px;
+  padding: 44px 44px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.apply-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Side by side row for Email & Mobile */
+.apply-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+.apply-label {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text-dark, #1A1A17);
+  line-height: 1.3;
+}
+
+.apply-input,
+.apply-select,
+.apply-textarea {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ECECEC;
+  border-radius: 8px;
+  padding: 13px 18px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-dark, #1A1A17);
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.apply-input::placeholder,
+.apply-textarea::placeholder {
+  color: #A0AEC0;
+  font-size: 13.5px;
+}
+
+.apply-input:focus,
+.apply-select:focus,
+.apply-textarea:focus {
+  border-color: var(--color-primary, #0A63AD);
+  box-shadow: 0 0 0 3px rgba(10, 99, 173, 0.08);
+}
+
+/* Custom Select with Chevron */
+.apply-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.apply-select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 44px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.apply-select-chevron {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Resume / CV File Upload */
+.apply-upload-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ECECEC;
+  border-radius: 8px;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.apply-upload-wrapper:hover,
+.apply-upload-wrapper:focus-within {
+  border-color: var(--color-primary, #0A63AD);
+  box-shadow: 0 0 0 3px rgba(10, 99, 173, 0.08);
+}
+
+.apply-file-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.apply-upload-text {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: #A0AEC0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+
+.apply-upload-text.has-file {
+  color: var(--text-dark, #1A1A17);
+  font-weight: 500;
+}
+
+.apply-upload-icon {
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Cover Letter Textarea */
+.apply-textarea {
+  min-height: 98px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* Submit Button Row */
+.apply-submit-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.apply-field-error {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #dc2626;
+  font-weight: 500;
+  margin-top: 4px;
+  display: block;
+}
+
+.apply-input.is-invalid,
+.apply-select.is-invalid,
+.apply-textarea.is-invalid {
+  border-color: #dc2626 !important;
+  background-color: #fff8f8;
+}
+
+.apply-success-msg {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: #15803d;
+  font-weight: 500;
+}
+
+.apply-error-msg {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.apply-submit-btn {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .apply-section {
+    padding: 60px 32px 70px;
+  }
+
+  .apply-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .apply-image-wrapper {
+    min-height: 380px;
+    height: 420px;
+  }
+
+  .apply-form-card {
+    padding: 36px 32px;
+  }
+
+  .apply-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .apply-section {
+    padding: 50px 24px 60px;
+  }
+
+  .apply-form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .apply-title {
+    font-size: 32px;
+  }
+
+  .apply-image-wrapper {
+    min-height: 300px;
+    height: 340px;
+    border-radius: 18px;
+  }
+
+  .apply-form-card {
+    border-radius: 18px;
+    padding: 28px 20px;
+  }
+
+  .apply-submit-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .apply-submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-title {
+    font-size: 28px;
+  }
+}

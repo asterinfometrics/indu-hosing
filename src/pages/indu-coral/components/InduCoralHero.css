@@ -1,0 +1,314 @@
+/* ==========================================================================
+   Indu Coral: Hero Section
+   ========================================================================== */
+
+.indu-coral-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Background Image & Gradient Overlays */
+.indu-coral-hero-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.indu-coral-hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+
+.indu-coral-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 25%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.8) 28%, rgba(0, 0, 0, 0.35) 55%, rgba(0, 0, 0, 0) 78%);
+  pointer-events: none;
+}
+
+/* Navbar Wrapper */
+.indu-coral-hero-nav-wrapper {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  padding-top: 16px;
+}
+
+/* Bottom Foreground Hero Content */
+.indu-coral-hero-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px 48px;
+  box-sizing: border-box;
+}
+
+/* Top Content Row: Title Left & Desc Right */
+.indu-coral-hero-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+
+.indu-coral-hero-title-col {
+  flex: 1;
+}
+
+.indu-coral-hero-title {
+  font-family: var(--font-title);
+  font-size: 52px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.indu-coral-hero-desc-col {
+  flex: 0 1 480px;
+}
+
+.indu-coral-hero-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.6;
+  margin: 0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Horizontal Divider Line */
+.indu-coral-hero-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.32);
+  margin-bottom: 24px;
+}
+
+/* Bottom Actions Row */
+.indu-coral-hero-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* CTA Button */
+.indu-coral-hero-cta-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.indu-coral-btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: #0A63AD;
+  border-radius: 8px;
+  padding: 6px 6px 6px 18px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.indu-coral-btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
+}
+
+.indu-coral-btn-icon-box {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+
+/* Spec Badges */
+.indu-coral-hero-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.indu-coral-hero-badges-desktop {
+  display: flex;
+}
+
+.indu-coral-hero-badges-mobile {
+  display: none;
+}
+
+.indu-coral-spec-badge {
+  background-color: #ffffff;
+  color: var(--text-dark);
+  border-radius: 6px;
+  padding: 12px 18px;
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .indu-coral-hero-container {
+    padding: 0 40px 36px;
+  }
+
+  .indu-coral-hero-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .indu-coral-hero-title {
+    font-size: 42px;
+  }
+
+  .indu-coral-hero-desc-col {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .indu-coral-hero-section {
+    min-height: 640px;
+  }
+
+  .indu-coral-hero-container {
+    padding: 0 20px 28px;
+  }
+
+  .indu-coral-hero-top-row {
+    margin-bottom: 20px;
+    gap: 16px;
+  }
+
+  .indu-coral-hero-title {
+    font-size: 28px;
+  }
+
+  .indu-coral-hero-desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .indu-coral-hero-badges.indu-coral-hero-badges-desktop,
+  .indu-coral-hero-badges-desktop {
+    display: none !important;
+  }
+
+  .indu-coral-hero-badges-mobile {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  .indu-coral-hero-divider {
+    margin-bottom: 24px;
+  }
+
+  .indu-coral-hero-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .indu-coral-spec-badge {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .indu-coral-hero-section {
+    min-height: 640px;
+  }
+
+  .indu-coral-hero-container {
+    padding: 0 16px 24px;
+  }
+
+  .indu-coral-hero-top-row {
+    margin-bottom: 18px;
+    gap: 16px;
+  }
+
+  .indu-coral-hero-title {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .indu-coral-hero-desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .indu-coral-hero-badges.indu-coral-hero-badges-desktop,
+  .indu-coral-hero-badges-desktop {
+    display: none !important;
+  }
+
+  .indu-coral-hero-badges-mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  .indu-coral-hero-divider {
+    margin-bottom: 24px;
+  }
+
+  .indu-coral-hero-cta-wrap {
+    width: 100%;
+  }
+
+  .indu-coral-spec-badge {
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+}

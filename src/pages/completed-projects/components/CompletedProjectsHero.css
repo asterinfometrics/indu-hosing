@@ -1,0 +1,319 @@
+/* ==========================================================================
+   Completed Projects: Hero Section
+   ========================================================================== */
+
+.completed-hero-section {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Navbar Wrapper */
+.completed-hero-nav-wrapper {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  padding-top: 16px;
+  margin-bottom: 24px;
+}
+
+/* Main Hero Container */
+.completed-hero-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* ==========================================================================
+   Left Column: Heading & CTA
+   ========================================================================== */
+
+.completed-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 580px;
+}
+
+.completed-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary, #0A63AD);
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  letter-spacing: -0.01em;
+}
+
+.completed-hero-badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.completed-hero-title {
+  font-family: var(--font-title);
+  font-size: 52px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 0 0 48px 0;
+}
+
+.completed-hero-btn {
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  border-radius: 10px;
+  padding: 6px 6px 6px 22px;
+  box-shadow: 0 4px 14px rgba(10, 99, 173, 0.2);
+}
+
+/* ==========================================================================
+   Right Column: 2-Column Infinite Vertical Auto-Scrolling Gallery
+   ========================================================================== */
+
+.completed-hero-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  height: 580px;
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%);
+  mask-image: linear-gradient(to bottom,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%);
+}
+
+.completed-collage-col {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* Marquee Tracks & Seamless Animation */
+.marquee-track {
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+
+.marquee-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 18px;
+}
+
+.marquee-track-up {
+  animation: marqueeScrollUp 32s linear infinite;
+}
+
+.marquee-track-down {
+  animation: marqueeScrollDown 32s linear infinite;
+}
+
+.completed-hero-collage:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScrollUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes marqueeScrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Collage Cards */
+.collage-card {
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  height: 230px;
+  min-height: 230px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+}
+
+.collage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.collage-card:hover .collage-img {
+  transform: scale(1.05);
+}
+
+/* Card Tag Overlay */
+.collage-card-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 5px 12px;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 999px;
+  letter-spacing: -0.01em;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.collage-card:hover .collage-card-tag {
+  background-color: var(--color-primary, #0A63AD);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .completed-hero-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 0 40px 60px;
+  }
+
+  .completed-hero-content {
+    max-width: 100%;
+  }
+
+  .completed-hero-title {
+    font-size: 42px;
+    margin-bottom: 32px;
+  }
+
+  .completed-hero-collage {
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .completed-hero-container {
+    padding: 0 20px 50px;
+  }
+
+  .completed-hero-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .completed-hero-collage {
+    height: 380px;
+    gap: 12px;
+  }
+
+  .marquee-group {
+    gap: 12px;
+    padding-bottom: 12px;
+  }
+
+  .collage-card {
+    height: 170px;
+    min-height: 170px;
+    border-radius: 14px;
+  }
+
+  .collage-card-tag {
+    font-size: 11px;
+    padding: 4px 9px;
+    bottom: 8px;
+    left: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .completed-hero-container {
+    padding: 0 20px 36px;
+    gap: 32px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+  }
+
+  .completed-hero-badge {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .completed-hero-title {
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: 24px;
+  }
+
+  .completed-hero-collage {
+    height: 300px;
+    gap: 10px;
+  }
+
+  .marquee-group {
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .collage-card {
+    height: 140px;
+    min-height: 140px;
+    border-radius: 12px;
+  }
+
+  .collage-card-tag {
+    font-size: 10px;
+    padding: 3px 8px;
+    bottom: 6px;
+    left: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,305 @@
+/* ==========================================================================
+   Partner With Us: Why Redevelop Section
+   ========================================================================== */
+
+.why-redevelop-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.why-redevelop-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Top Badge & Divider Line Row
+   ========================================================================== */
+
+.why-redevelop-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.why-redevelop-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary, #0A63AD);
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.why-redevelop-badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  border-radius: 2px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.why-redevelop-badge-line {
+  flex: 1;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+/* ==========================================================================
+   Top Header Row
+   ========================================================================== */
+
+.why-redevelop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.why-redevelop-header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.why-redevelop-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.why-redevelop-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 440px;
+}
+
+.why-redevelop-subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+.why-redevelop-cta-btn {
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  border-radius: 10px;
+  padding: 6px 6px 6px 20px;
+}
+
+/* ==========================================================================
+   Bottom Content Grid: Image + 2x2 Stats
+   ========================================================================== */
+
+.why-redevelop-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.why-redevelop-image-card {
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+  background-color: #f1f5f9;
+}
+
+.why-redevelop-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 2x2 Stat Cards Grid */
+.why-redevelop-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.why-redevelop-stat-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ECEEF1;
+  border-radius: 18px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 210px;
+  box-sizing: border-box;
+}
+
+.why-redevelop-stat-number {
+  font-family: var(--font-title);
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.why-redevelop-stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.why-redevelop-stat-title {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.why-redevelop-stat-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-gray);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .why-redevelop-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .why-redevelop-header-right {
+    max-width: 100%;
+  }
+
+  .why-redevelop-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .why-redevelop-image-card {
+    min-height: 340px;
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-redevelop-section {
+    padding: 40px 20px;
+  }
+
+  .why-redevelop-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .why-redevelop-subtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .why-redevelop-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .why-redevelop-stat-card {
+    min-height: 170px;
+    padding: 24px 20px;
+  }
+
+  .why-redevelop-stat-number {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-redevelop-section {
+    padding: 40px 20px;
+  }
+
+  .why-redevelop-header {
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .why-redevelop-badge-row {
+    margin-bottom: 20px;
+  }
+
+  .why-redevelop-badge {
+    font-size: 16px;
+  }
+
+  .why-redevelop-title {
+    font-size: 24px;
+  }
+
+  .why-redevelop-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .why-redevelop-grid {
+    gap: 24px;
+  }
+
+  .why-redevelop-image-card {
+    min-height: 220px;
+    max-height: 260px;
+    border-radius: 14px;
+  }
+
+  .why-redevelop-stat-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+    min-height: auto;
+  }
+
+  .why-redevelop-stat-number {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .why-redevelop-stat-title {
+    font-size: 16px;
+  }
+
+  .why-redevelop-stat-desc {
+    font-size: 14px;
+  }
+}

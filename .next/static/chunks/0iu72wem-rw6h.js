@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,87949,(o,t,e)=>{let c="/completed-projects/components/CompletedProjectsGrid";(window.__NEXT_P=window.__NEXT_P||[]).push([c,()=>o.r(9194)]),t.hot&&t.hot.dispose(function(){window.__NEXT_P.push([c])})}]);

@@ -1,0 +1,737 @@
+/* ==========================================================================
+   Indu Coral: Print Ads Dedicated Lightbox Modal
+   Matches screenshot:
+   - Top-left "Print ad X of Y"
+   - Top-right "Download PDF ->" button and white rounded square "X" close button
+   - Flanking circular navigation arrows with horizontal arrow icons
+   - Centered vertical ad poster display
+   - "The Hindu, 4 July 2026" & "Advertisement • Prices and details are as on this date" caption
+   - Bottom thumbnail strip with document cards and short date labels
+   ========================================================================== */
+
+.print-ad-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: #1F2224;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 28px 14px 28px;
+  box-sizing: border-box;
+  animation: printAdFadeIn 220ms ease-out forwards;
+  overflow: hidden;
+  user-select: none;
+}
+
+@keyframes printAdFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   Top Header Bar
+   ========================================================================== */
+
+.print-ad-modal-header {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  z-index: 10;
+}
+
+.print-ad-modal-counter {
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 14px;
+  font-weight: 500;
+  color: #CBD5E1;
+  letter-spacing: -0.01em;
+}
+
+.print-ad-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* "Download PDF ->" Button */
+.print-ad-download-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  color: var(--color-primary, #0A63AD);
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 4px 6px 4px 16px;
+  border-radius: 8px;
+  border: 1px solid #D6E6F5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.print-ad-download-pdf-btn:hover {
+  background-color: #F8FAFC;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.print-ad-pdf-icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.print-ad-download-pdf-btn:hover .print-ad-pdf-icon-box {
+  transform: translateX(2px);
+}
+
+/* Close "X" Button */
+.print-ad-modal-close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #D6E6F5;
+  color: #1E293B;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.print-ad-modal-close-btn:hover {
+  background-color: #F1F5F9;
+  color: #0F172A;
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Center Stage Area (Arrows + Poster Image)
+   ========================================================================== */
+
+.print-ad-modal-stage {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 0;
+  padding: 8px 0;
+}
+
+/* Left & Right Circular Navigation Arrows */
+.print-ad-stage-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #D6E6F5;
+  color: var(--color-primary, #0A63AD);
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.print-ad-stage-prev {
+  margin-right: 36px;
+}
+
+.print-ad-stage-next {
+  margin-left: 36px;
+}
+
+.print-ad-stage-nav-btn:hover {
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+  border-color: var(--color-primary, #0A63AD);
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(10, 99, 173, 0.35);
+}
+
+.print-ad-stage-nav-btn:active {
+  transform: scale(0.96);
+}
+
+/* Center Image Frame */
+.print-ad-stage-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 68vh;
+  max-width: 960px;
+  width: auto;
+  position: relative;
+}
+
+.print-ad-stage-img {
+  display: block;
+  max-height: 68vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+  animation: printAdPhotoIn 200ms ease;
+}
+
+@keyframes printAdPhotoIn {
+  from {
+    opacity: 0.88;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Footer Section (Caption + Thumbnails Strip)
+   ========================================================================== */
+
+.print-ad-modal-footer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Two-line centered caption */
+.print-ad-modal-caption-wrap {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.print-ad-modal-title {
+  margin: 0 0 4px 0;
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.print-ad-modal-subtitle {
+  margin: 0;
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 12.5px;
+  font-weight: 400;
+  color: #94A3B8;
+  letter-spacing: -0.01em;
+}
+
+/* Thumbnails Strip */
+.print-ad-modal-thumbnails-strip {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  padding: 4px 0 6px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.print-ad-modal-thumbnails-strip::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Individual Thumbnail Column (Card + Date below) */
+.print-ad-thumb-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.print-ad-download-pdf-btn:disabled {
+  opacity: 0.75;
+  cursor: wait;
+  pointer-events: none;
+}
+
+/* Document Paper Card Button */
+.print-ad-thumb-card {
+  width: 44px;
+  height: 58px;
+  border-radius: 6px;
+  background-color: #24292E;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.print-ad-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Subtle overlay on inactive thumbnails */
+.print-ad-thumb-dim-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(31, 34, 36, 0.35);
+  transition: background-color 0.2s ease;
+  pointer-events: none;
+}
+
+.print-ad-thumb-col:hover .print-ad-thumb-dim-overlay {
+  background-color: rgba(31, 34, 36, 0.1);
+}
+
+.print-ad-thumb-col:hover .print-ad-thumb-card {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* Active State: Shows actual poster thumbnail with sharp blue border & glow */
+.print-ad-thumb-col.active .print-ad-thumb-card {
+  border: 2px solid #0088FF;
+  box-shadow:
+    0 0 0 2px rgba(0, 136, 255, 0.45),
+    0 4px 14px rgba(0, 0, 0, 0.4);
+  transform: scale(1.06);
+}
+
+/* Date Label Under Thumbnail */
+.print-ad-thumb-label {
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 11px;
+  font-weight: 500;
+  color: #94A3B8;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.print-ad-thumb-col:hover .print-ad-thumb-label {
+  color: #CBD5E1;
+}
+
+.print-ad-thumb-col.active .print-ad-thumb-label {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DEVICE CATEGORY BREAKPOINTS
+   - Small mobile: 320 px
+   - Standard mobile: 375 px
+   - Large mobile: 425 px
+   - Tablet portrait: 768 px
+   - Tablet landscape / small laptop: 1024 px
+   - Laptop: 1280 px
+   - Desktop: 1440 px
+   - Large desktop: 1920 px
+   ========================================================================== */
+
+/* 1. Large desktop: 1920 px+ */
+@media (min-width: 1920px) {
+  .print-ad-stage-img-wrap {
+    max-height: 72vh;
+    max-width: 1100px;
+  }
+
+  .print-ad-stage-img {
+    max-height: 72vh;
+  }
+
+  .print-ad-thumb-card {
+    width: 48px;
+    height: 64px;
+  }
+
+  .print-ad-thumb-label {
+    font-size: 12px;
+  }
+}
+
+/* 2. Desktop: 1440 px */
+@media (min-width: 1281px) and (max-width: 1919px) {
+  .print-ad-stage-img-wrap {
+    max-height: 70vh;
+    max-width: 1000px;
+  }
+
+  .print-ad-stage-img {
+    max-height: 70vh;
+  }
+}
+
+/* 3. Laptop: 1280 px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .print-ad-modal-overlay {
+    padding: 16px 20px 12px 20px;
+  }
+
+  .print-ad-stage-img-wrap {
+    max-height: 68vh;
+    max-width: 920px;
+  }
+
+  .print-ad-stage-img {
+    max-height: 68vh;
+  }
+
+  .print-ad-stage-prev {
+    margin-right: 24px;
+  }
+
+  .print-ad-stage-next {
+    margin-left: 24px;
+  }
+}
+
+/* 4. Tablet landscape / small laptop: 1024 px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .print-ad-modal-overlay {
+    padding: 16px 18px 12px 18px;
+  }
+
+  .print-ad-stage-img-wrap {
+    max-height: 64vh;
+    max-width: 840px;
+  }
+
+  .print-ad-stage-img {
+    max-height: 64vh;
+  }
+
+  .print-ad-stage-prev {
+    margin-right: 18px;
+  }
+
+  .print-ad-stage-next {
+    margin-left: 18px;
+  }
+
+  .print-ad-thumb-card {
+    width: 40px;
+    height: 54px;
+  }
+}
+
+/* 5. Tablet portrait: 768 px */
+@media (min-width: 426px) and (max-width: 768px) {
+  .print-ad-modal-overlay {
+    padding: 14px 14px 10px 14px;
+  }
+
+  .print-ad-stage-img-wrap {
+    max-height: 62vh;
+    max-width: 680px;
+  }
+
+  .print-ad-stage-img {
+    max-height: 62vh;
+  }
+
+  .print-ad-stage-prev {
+    margin-right: 12px;
+  }
+
+  .print-ad-stage-next {
+    margin-left: 12px;
+  }
+
+  .print-ad-stage-nav-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .print-ad-modal-title {
+    font-size: 14.5px;
+  }
+
+  .print-ad-modal-subtitle {
+    font-size: 11.5px;
+  }
+
+  .print-ad-modal-thumbnails-strip {
+    justify-content: flex-start;
+    padding: 4px 6px;
+  }
+
+  .print-ad-thumb-card {
+    width: 38px;
+    height: 50px;
+  }
+}
+
+/* 6. Large mobile: 425 px */
+@media (min-width: 376px) and (max-width: 425px) {
+  .print-ad-modal-overlay {
+    padding: 12px 10px 8px 10px;
+  }
+
+  .print-ad-modal-counter {
+    font-size: 12.5px;
+  }
+
+  .print-ad-download-pdf-btn {
+    font-size: 12px;
+    padding: 3px 5px 3px 12px;
+    gap: 8px;
+  }
+
+  .print-ad-pdf-icon-box {
+    width: 22px;
+    height: 22px;
+  }
+
+  .print-ad-modal-close-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .print-ad-stage-img-wrap {
+    max-height: 58vh;
+    max-width: 92vw;
+  }
+
+  .print-ad-stage-img {
+    max-height: 58vh;
+  }
+
+  .print-ad-stage-nav-btn {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    z-index: 20;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .print-ad-stage-prev {
+    left: 4px;
+  }
+
+  .print-ad-stage-next {
+    right: 4px;
+  }
+
+  .print-ad-modal-title {
+    font-size: 14px;
+  }
+
+  .print-ad-modal-subtitle {
+    font-size: 11px;
+  }
+
+  .print-ad-modal-thumbnails-strip {
+    justify-content: flex-start;
+    padding: 4px 4px;
+    gap: 8px;
+  }
+
+  .print-ad-thumb-card {
+    width: 36px;
+    height: 48px;
+  }
+
+  .print-ad-thumb-label {
+    font-size: 10px;
+  }
+}
+
+/* 7. Standard mobile: 375 px */
+@media (min-width: 321px) and (max-width: 375px) {
+  .print-ad-modal-overlay {
+    padding: 10px 8px 6px 8px;
+  }
+
+  .print-ad-modal-counter {
+    font-size: 12px;
+  }
+
+  .print-ad-download-pdf-btn {
+    font-size: 11.5px;
+    padding: 3px 4px 3px 10px;
+    gap: 6px;
+  }
+
+  .print-ad-pdf-icon-box {
+    width: 20px;
+    height: 20px;
+  }
+
+  .print-ad-modal-close-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .print-ad-stage-img-wrap {
+    max-height: 56vh;
+    max-width: 90vw;
+  }
+
+  .print-ad-stage-img {
+    max-height: 56vh;
+  }
+
+  .print-ad-stage-nav-btn {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    z-index: 20;
+  }
+
+  .print-ad-stage-prev {
+    left: 4px;
+  }
+
+  .print-ad-stage-next {
+    right: 4px;
+  }
+
+  .print-ad-modal-title {
+    font-size: 13.5px;
+  }
+
+  .print-ad-modal-subtitle {
+    font-size: 10.5px;
+  }
+
+  .print-ad-modal-thumbnails-strip {
+    justify-content: flex-start;
+    padding: 2px 2px;
+    gap: 7px;
+  }
+
+  .print-ad-thumb-card {
+    width: 34px;
+    height: 46px;
+  }
+
+  .print-ad-thumb-label {
+    font-size: 9.5px;
+  }
+}
+
+/* 8. Small mobile: 320 px */
+@media (max-width: 320px) {
+  .print-ad-modal-overlay {
+    padding: 8px 6px 4px 6px;
+  }
+
+  .print-ad-modal-counter {
+    font-size: 11px;
+  }
+
+  .print-ad-download-pdf-btn span:first-child {
+    font-size: 11px;
+  }
+
+  .print-ad-download-pdf-btn {
+    padding: 2px 3px 2px 8px;
+    gap: 4px;
+  }
+
+  .print-ad-pdf-icon-box {
+    width: 18px;
+    height: 18px;
+  }
+
+  .print-ad-modal-close-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .print-ad-stage-img-wrap {
+    max-height: 52vh;
+    max-width: 88vw;
+  }
+
+  .print-ad-stage-img {
+    max-height: 52vh;
+  }
+
+  .print-ad-stage-nav-btn {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    z-index: 20;
+  }
+
+  .print-ad-stage-prev {
+    left: 2px;
+  }
+
+  .print-ad-stage-next {
+    right: 2px;
+  }
+
+  .print-ad-modal-title {
+    font-size: 12.5px;
+  }
+
+  .print-ad-modal-subtitle {
+    font-size: 10px;
+  }
+
+  .print-ad-modal-thumbnails-strip {
+    justify-content: flex-start;
+    padding: 2px;
+    gap: 6px;
+  }
+
+  .print-ad-thumb-card {
+    width: 30px;
+    height: 42px;
+  }
+
+  .print-ad-thumb-label {
+    font-size: 9px;
+  }
+}

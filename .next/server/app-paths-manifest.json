@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/career/page": "app/career/page.js",
+  "/completed-projects/page": "app/completed-projects/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/indu-coral/gallery/page": "app/indu-coral/gallery/page.js",
+  "/indu-coral/page": "app/indu-coral/page.js",
+  "/joint-ventures/page": "app/joint-ventures/page.js",
+  "/page": "app/page.js",
+  "/redevelopment/page": "app/redevelopment/page.js"
+}

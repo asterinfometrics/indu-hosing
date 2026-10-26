@@ -1,0 +1,345 @@
+/* ==========================================================================
+   Joint Ventures: Tell Us About Your Property Form Section
+   ========================================================================== */
+
+.jv-form-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.jv-form-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Section Header
+   ========================================================================== */
+
+.jv-form-header {
+  margin-bottom: 48px;
+}
+
+.jv-form-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary, #0A63AD);
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  letter-spacing: -0.01em;
+}
+
+.jv-form-badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.jv-form-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2-Column Layout: Left Image + Right Form
+   ========================================================================== */
+
+.jv-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.18fr;
+  gap: 48px;
+  align-items: stretch;
+}
+
+/* Left Image Column */
+.jv-form-image-col {
+  width: 100%;
+  display: flex;
+}
+
+.jv-form-image-card {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  background-color: #f1f5f9;
+}
+
+.jv-form-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Form Card */
+.jv-form-card {
+  background-color: #F7F8FA;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jv-property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.jv-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.jv-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.jv-form-field.full-width {
+  width: 100%;
+}
+
+.jv-form-label {
+  font-family: var(--font-title);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: -0.01em;
+}
+
+.jv-form-input,
+.jv-form-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #ECEEF1;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  color: #111827;
+  transition: all 0.2s ease;
+}
+
+.jv-form-input {
+  height: 48px;
+  padding: 0 16px;
+}
+
+.jv-form-input::placeholder,
+.jv-form-textarea::placeholder {
+  color: #98A2B3;
+  opacity: 1;
+}
+
+.jv-form-input:focus,
+.jv-form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary, #0A63AD);
+  box-shadow: 0 0 0 3px rgba(10, 99, 173, 0.12);
+}
+
+.jv-form-textarea {
+  padding: 14px 16px;
+  min-height: 105px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.jv-form-field-error {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #dc2626;
+  font-weight: 500;
+  margin-top: 4px;
+  display: block;
+}
+
+.jv-form-input.is-invalid,
+.jv-form-textarea.is-invalid {
+  border-color: #dc2626 !important;
+  background-color: #fff8f8;
+}
+
+/* Centered Form Actions */
+.jv-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.jv-submit-btn {
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  border-radius: 10px;
+  padding: 6px 6px 6px 22px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Success Feedback */
+.jv-form-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.jv-success-icon-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: rgba(10, 99, 173, 0.1);
+  color: var(--color-primary, #0A63AD);
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.jv-form-success h3 {
+  font-family: var(--font-title);
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 10px 0;
+}
+
+.jv-form-success p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: #667085;
+  max-width: 420px;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .jv-form-section {
+    padding: 60px 40px 80px;
+  }
+
+  .jv-form-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .jv-form-title {
+    font-size: 38px;
+  }
+
+  .jv-form-image-card {
+    min-height: 380px;
+    max-height: 460px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jv-form-section {
+    padding: 40px 20px;
+  }
+
+  .jv-form-header {
+    margin-bottom: 30px;
+  }
+
+  .jv-form-title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .jv-form-card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .jv-form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .jv-form-actions {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .jv-form-section {
+    padding: 40px 20px;
+  }
+
+  .jv-form-header {
+    margin-bottom: 30px;
+  }
+
+  .jv-form-badge {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .jv-form-title {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .jv-form-image-card {
+    min-height: 220px;
+    max-height: 260px;
+    border-radius: 14px;
+  }
+
+  .jv-form-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .jv-property-form {
+    gap: 16px;
+  }
+
+  .jv-form-input {
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .jv-form-textarea {
+    min-height: 100px;
+    font-size: 14px;
+  }
+}

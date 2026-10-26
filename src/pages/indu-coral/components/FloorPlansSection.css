@@ -1,0 +1,323 @@
+/* ==========================================================================
+   Indu Coral: Floor Plans Interactive Showcase Section
+   ========================================================================== */
+
+.floor-plans-section {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.floor-plans-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Section Header & Floor Tabs
+   ========================================================================== */
+
+.floor-plans-header {
+  margin-bottom: 40px;
+}
+
+.floor-plans-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px 0;
+}
+
+.floor-plans-subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0 0 40px 0;
+}
+
+/* Floor Navigation Tabs */
+.floor-plans-tabs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.floor-tab-btn {
+  background-color: #14161C;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  white-space: nowrap;
+}
+
+.floor-tab-btn:hover {
+  background-color: #1E293B;
+  transform: translateY(-1px);
+}
+
+.floor-tab-btn.active {
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Floor Plan Display Card
+   ========================================================================== */
+
+.floor-plan-card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 48px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 48px;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+  border: 1px solid #ECEEF1;
+}
+
+/* Left Image Column */
+.floor-plan-image-col {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floor-plan-image-frame {
+  width: 100%;
+  max-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 14px;
+  background-color: #ffffff;
+}
+
+.floor-plan-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Right Details Column */
+.floor-plan-details-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.floor-plan-kicker {
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary, #0A63AD);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.floor-plan-heading {
+  font-family: var(--font-title);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px 0;
+}
+
+.floor-plan-level {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-gray);
+  margin: 0 0 32px 0;
+}
+
+/* Highlights List */
+.floor-plan-highlights {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.floor-highlight-item {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #ECEEF1;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.floor-highlight-item:hover {
+  transform: translateX(3px);
+  border-color: #D1D5DB;
+}
+
+.floor-highlight-icon-box {
+  width: 32px;
+  height: 32px;
+  background-color: #14161C;
+  color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.floor-highlight-text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .floor-plans-section {
+    padding: 60px 40px;
+  }
+
+  .floor-plan-card {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 36px;
+  }
+
+  .floor-plans-title {
+    font-size: 38px;
+  }
+
+  .floor-plan-heading {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floor-plans-section {
+    padding: 40px 20px;
+  }
+
+  .floor-plans-title {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .floor-plan-card {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+
+  .floor-plans-tabs {
+    gap: 8px;
+  }
+
+  .floor-tab-btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .floor-plan-heading {
+    font-size: 28px;
+  }
+
+  .floor-plan-level {
+    font-size: 14.5px;
+    margin-bottom: 24px;
+  }
+
+  .floor-highlight-item {
+    padding: 12px 14px;
+  }
+
+  .floor-highlight-text {
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floor-plans-section {
+    padding: 40px 20px;
+  }
+
+  .floor-plans-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .floor-plans-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .floor-plans-tabs {
+    gap: 8px;
+  }
+
+  .floor-tab-btn {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .floor-plan-card {
+    padding: 12px;
+    gap: 24px;
+    border-radius: 18px;
+  }
+
+  .floor-plan-image-frame {
+    border-radius: 12px;
+  }
+
+  .floor-plan-heading {
+    font-size: 22px;
+  }
+
+  .floor-plan-level {
+    font-size: 13.5px;
+    margin-bottom: 18px;
+  }
+
+  .floor-highlight-item {
+    padding: 10px 12px;
+    gap: 10px;
+    border-radius: 8px;
+  }
+
+  .floor-highlight-text {
+    font-size: 12.5px;
+  }
+}

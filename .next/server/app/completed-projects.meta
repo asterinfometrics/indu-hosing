@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/completed-projects/layout,_N_T_/completed-projects/page,_N_T_/completed-projects"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/completed-projects/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/acc0eba9aa96ac5ef1555273dff23b1efb4aae64ce1c6e1693c2d7e872471849/$/completed-projects",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/completed-projects/page"
+    },
+    "isFallback": false
+  }
+}

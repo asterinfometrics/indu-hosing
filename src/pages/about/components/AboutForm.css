@@ -1,0 +1,339 @@
+.about-form-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  color: var(--text-dark, #1A1A17);
+}
+
+.about-form-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header: Tag + Title */
+.about-form-header {
+  margin-bottom: 50px;
+}
+
+.about-form-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.about-form-tag-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.about-form-tag-text {
+  font-family: var(--font-title, 'Radikal', sans-serif);
+  font-size: 16.5px;
+  font-weight: 500;
+  color: var(--color-primary, #0A63AD);
+  letter-spacing: -0.01em;
+}
+
+.about-form-title {
+  font-family: var(--font-title, 'Radikal', sans-serif);
+  font-size: 44px;
+  font-weight: 500;
+  color: var(--text-dark, #1A1A17);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+/* 2-Column Bento Grid */
+.about-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 48px;
+  align-items: stretch;
+}
+
+/* Left: Image Column */
+.about-form-image-col {
+  width: 100%;
+  display: flex;
+}
+
+.about-form-image-wrapper {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  background-color: #f5f5f5;
+  min-height: 520px;
+  height: 100%;
+}
+
+.about-form-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right: Form Column */
+.about-form-col {
+  width: 100%;
+  display: flex;
+}
+
+.about-form-card {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 24px;
+  padding: 44px 44px 38px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+/* Form Groups & Layout */
+.about-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-field-label {
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text-dark, #1A1A17);
+  line-height: 1.3;
+}
+
+.about-field-input,
+.about-field-select,
+.about-field-textarea {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ECECEC;
+  border-radius: 8px;
+  padding: 13px 18px;
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 14px;
+  color: var(--text-dark, #1A1A17);
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-field-input::placeholder,
+.about-field-textarea::placeholder {
+  color: #A0AEC0;
+  font-size: 13.5px;
+}
+
+.about-field-input:focus,
+.about-field-select:focus,
+.about-field-textarea:focus {
+  border-color: var(--color-primary, #0A63AD);
+  box-shadow: 0 0 0 3px rgba(10, 99, 173, 0.08);
+}
+
+/* Custom Select with Chevron */
+.about-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.about-field-select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 46px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.about-field-select.select-empty {
+  color: #A0AEC0;
+}
+
+.about-select-chevron {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Textarea */
+.about-field-textarea {
+  min-height: 110px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.about-field-error {
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 12px;
+  color: #dc2626;
+  font-weight: 500;
+  margin-top: 4px;
+  display: block;
+}
+
+.about-field-input.is-invalid,
+.about-field-select.is-invalid,
+.about-field-textarea.is-invalid {
+  border-color: #dc2626 !important;
+  background-color: #fff8f8;
+}
+
+/* Submit Action Row */
+.about-submit-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.about-submit-btn {
+  font-family: var(--font-body, 'Onest', sans-serif);
+  cursor: pointer;
+  border: none;
+  padding: 12px 14px 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.about-submit-btn:hover {
+  background-color: #085291;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(10, 99, 173, 0.25);
+}
+
+/* Success Card */
+.about-form-success {
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.about-form-success-icon {
+  color: #10B981;
+  background-color: #ECFDF5;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-form-success-title {
+  font-family: var(--font-title, 'Radikal', sans-serif);
+  font-size: 26px;
+  font-weight: 600;
+  color: #1A1A17;
+  margin: 0;
+}
+
+.about-form-success-text {
+  font-family: var(--font-body, 'Onest', sans-serif);
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4A5568;
+  max-width: 480px;
+  margin: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .about-form-section {
+    padding: 60px 32px 70px;
+  }
+
+  .about-form-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-form-image-wrapper {
+    min-height: 380px;
+    max-height: 440px;
+  }
+
+  .about-form-card {
+    padding: 34px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-form-section {
+    padding: 40px 20px;
+  }
+
+  .about-form-header {
+    margin-bottom: 28px;
+  }
+
+  .about-form-title {
+    font-size: 30px;
+  }
+
+  .about-form-image-wrapper {
+    min-height: 280px;
+  }
+
+  .about-form-card {
+    padding: 26px 20px;
+    border-radius: 18px;
+  }
+
+  .about-submit-row {
+    justify-content: stretch;
+  }
+
+  .about-submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-form-title {
+    font-size: 25px;
+  }
+
+  .about-field-input,
+  .about-field-select,
+  .about-field-textarea {
+    padding: 11px 14px;
+    font-size: 13.5px;
+  }
+}

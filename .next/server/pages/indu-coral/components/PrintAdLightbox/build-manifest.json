@@ -1,0 +1,20 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/indu-coral/components/PrintAdLightbox": [
+      "static/chunks/1638f9kjcq_x8.js",
+      "static/chunks/2_jor96l0x_39.css",
+      "static/chunks/turbopack-3-ry682tkyiqk.js"
+    ]
+  },
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/indu-coral/components/PrintAdLightbox": {"otherChunks":["static/chunks/1638f9kjcq_x8.js","static/chunks/2_jor96l0x_39.css"],"runtimeModuleIds":[10783,15580]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}

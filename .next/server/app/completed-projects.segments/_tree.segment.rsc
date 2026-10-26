@@ -1,0 +1,13 @@
+:HL["/_next/static/chunks/107jzbv2zvy28.css","style"]
+:HL["/_next/static/chunks/0s2t47nr901zh.css","style"]
+:HL["/_next/static/chunks/1-0heerx7jmbn.css","style"]
+:HL["/_next/static/chunks/42cgvu2mah_yc.css","style"]
+:HL["/_next/static/chunks/04l-3mw8-uwaj.css","style"]
+:HL["/_next/static/chunks/2sk17wgrzlbro.css","style"]
+:HL["/_next/static/chunks/32hnvx9thgzr_.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&display=swap","style"]
+:HL["/_next/static/chunks/1dfn9__heeklp.css","style"]
+:HL["/_next/static/chunks/0zctgnn09elij.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"completed-projects","h":96,"c":"$Q2"}]]
+0:{"b":"Xh3mtBw7O1JGnbjndy7iQ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

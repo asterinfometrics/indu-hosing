@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,65310,(o,n,t)=>{let i="/indu-coral/components/FloorPlansSection";(window.__NEXT_P=window.__NEXT_P||[]).push([i,()=>o.r(84428)]),n.hot&&n.hot.dispose(function(){window.__NEXT_P.push([i])})}]);

@@ -1,0 +1,20 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/indu-coral/components/WhyInduCoral": [
+      "static/chunks/2q3-bkit2csw-.js",
+      "static/chunks/40ps5_jj71e3z.css",
+      "static/chunks/turbopack-3-ry682tkyiqk.js"
+    ]
+  },
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/indu-coral/components/WhyInduCoral": {"otherChunks":["static/chunks/2q3-bkit2csw-.js","static/chunks/40ps5_jj71e3z.css"],"runtimeModuleIds":[10783,59985]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}

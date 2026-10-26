@@ -1,0 +1,542 @@
+/* ==========================================================================
+   Indu Coral: Print Ads Section (Newspaper Advertisements)
+   ========================================================================== */
+
+.print-ads-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.print-ads-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* ==========================================================================
+   Section Header (Title Left, "View all ads" Right)
+   ========================================================================== */
+
+.print-ads-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.print-ads-header-left {
+  max-width: 720px;
+}
+
+.print-ads-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary, #0A63AD);
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.print-ads-badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.print-ads-title {
+  font-family: var(--font-title);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-dark, #1A1A17);
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.02em;
+}
+
+.print-ads-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: #757575;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* "View all ads" Button matching "View all photos" */
+.print-ads-view-all-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Slider Carousel Wrapper
+   ========================================================================== */
+
+.print-ads-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Navigation Arrow Buttons matching uploaded screenshot */
+.print-ads-nav-btn {
+  position: absolute;
+  top: 38%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 31%;
+  background-color: #F5F5F5;
+  border: 1px solid #D6E6F5;
+  color: var(--color-primary, #0A63AD);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 15;
+  box-shadow: 0 4px 14px rgba(10, 99, 173, 0.08);
+  transition: all 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+  outline: none;
+}
+
+.print-ads-nav-prev {
+  left: -52px;
+}
+
+.print-ads-nav-next {
+  right: -52px;
+}
+
+.print-ads-nav-btn:hover {
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+  border-color: var(--color-primary, #0A63AD);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.print-ads-nav-btn:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+/* ==========================================================================
+   Cards Slider Track (Drag / Swipe to Scroll)
+   ========================================================================== */
+
+.print-ads-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 4px 20px 4px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  cursor: grab;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+
+.print-ads-track::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.print-ads-track.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+  scroll-behavior: auto;
+}
+
+/* ==========================================================================
+   Individual Ad Card
+   ========================================================================== */
+
+.print-ad-card {
+  flex: 0 0 calc((100% - (3 * 24px)) / 4);
+  width: calc((100% - (3 * 24px)) / 4);
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* The Newspaper / Print Ad Poster Frame */
+.print-ad-sheet {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.38;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  border: 1px solid #ECEFF2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  transition:
+    transform 0.32s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.32s cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 0.32s ease;
+}
+
+.print-ad-sheet:hover {
+  transform: translateY(-5px);
+  border-color: #CBD5E1;
+}
+
+.print-ad-card:focus-visible .print-ad-sheet {
+  outline: 2px solid var(--color-primary, #0A63AD);
+  outline-offset: 3px;
+}
+
+/* Poster Artwork Wrapper */
+.print-ad-poster-wrapper {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #E2E8F0;
+  background-color: #F8FAFC;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.print-ad-poster-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.print-ad-sheet:hover .print-ad-poster-img {
+  transform: scale(1.035);
+}
+
+/* Hover Overlay Hint */
+.print-ad-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.25);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.print-ad-sheet:hover .print-ad-hover-overlay {
+  opacity: 1;
+}
+
+.print-ad-hover-badge {
+  background: rgba(10, 99, 173, 0.95);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transform: translateY(4px);
+  transition: transform 0.25s ease;
+}
+
+.print-ad-sheet:hover .print-ad-hover-badge {
+  transform: translateY(0);
+}
+
+.print-ad-sheet:hover .print-ad-hover-overlay {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Card Info Below Sheet
+   ========================================================================== */
+
+.print-ad-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 14px;
+}
+
+.print-ad-date {
+  font-family: var(--font-title);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark, #1A1A17);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.print-ad-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.print-ad-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  color: #334155;
+  background-color: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  border-radius: 4px;
+  padding: 3px 8px;
+  letter-spacing: 0.01em;
+}
+
+/* "View ad ->" Action Link */
+.print-ad-view-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-primary, #0A63AD);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.print-ad-view-link:hover {
+  color: #085291;
+  gap: 9px;
+  text-decoration: underline;
+}
+
+.print-ad-view-arrow {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.print-ad-view-link:hover .print-ad-view-arrow {
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   Footnote Below Slider
+   ========================================================================== */
+
+.print-ads-footnote {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: #757575;
+  margin: 32px 0 0 0;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .print-ads-section {
+    padding: 70px 48px;
+  }
+
+  .print-ads-title {
+    font-size: 36px;
+  }
+
+  .print-ads-nav-prev {
+    left: -12px;
+  }
+
+  .print-ads-nav-next {
+    right: -12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .print-ads-section {
+    padding: 64px 36px;
+  }
+
+  .print-ads-title {
+    font-size: 32px;
+  }
+
+  .print-ad-card {
+    flex: 0 0 250px;
+    width: 250px;
+  }
+
+  .print-ads-track {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .print-ads-section {
+    padding: 48px 16px;
+  }
+
+  .print-ads-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+
+  .print-ads-title {
+    font-size: 26px;
+  }
+
+  .print-ads-desc {
+    font-size: 14.5px;
+  }
+
+  .print-ads-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Single-card horizontal snap slider on mobile */
+  .print-ads-track {
+    scroll-snap-type: x mandatory;
+    gap: 0;
+    padding: 10px 0 20px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .print-ad-card {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    box-sizing: border-box;
+    padding: 0 32px;
+  }
+
+  .print-ad-sheet {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .print-ad-meta {
+    max-width: 300px;
+    margin: 12px auto 0 auto;
+    width: 100%;
+  }
+
+  .print-ads-nav-btn {
+    width: 40px;
+    height: 40px;
+    top: 42%;
+    z-index: 10;
+  }
+
+  .print-ads-nav-prev {
+    left: 4px;
+  }
+
+  .print-ads-nav-next {
+    right: 4px;
+  }
+
+  .print-ads-view-all-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .print-ads-section {
+    padding: 40px 12px;
+  }
+
+  .print-ads-title {
+    font-size: 22px;
+  }
+
+  .print-ads-badge {
+    font-size: 13.5px;
+    margin-bottom: 8px;
+  }
+
+  .print-ads-track {
+    scroll-snap-type: x mandatory;
+    gap: 0;
+    padding: 8px 0 16px 0;
+  }
+
+  .print-ad-card {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    padding: 0 24px;
+  }
+
+  .print-ad-sheet {
+    max-width: 275px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .print-ad-meta {
+    max-width: 275px;
+    margin: 10px auto 0 auto;
+    width: 100%;
+  }
+
+  .print-ad-date {
+    font-size: 13.5px;
+  }
+
+  .print-ads-nav-btn {
+    width: 36px;
+    height: 36px;
+    top: 40%;
+  }
+
+  .print-ads-nav-prev {
+    left: 2px;
+  }
+
+  .print-ads-nav-next {
+    right: 2px;
+  }
+}

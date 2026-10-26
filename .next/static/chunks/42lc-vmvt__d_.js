@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,15233,(o,n,i)=>{let t="/indu-coral/components/InduCoralBookingForm";(window.__NEXT_P=window.__NEXT_P||[]).push([t,()=>o.r(13069)]),n.hot&&n.hot.dispose(function(){window.__NEXT_P.push([t])})}]);

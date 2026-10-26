@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/api/contact/route": "/api/contact",
+  "/career/page": "/career",
+  "/completed-projects/page": "/completed-projects",
+  "/contact/page": "/contact",
+  "/gallery/page": "/gallery",
+  "/indu-coral/gallery/page": "/indu-coral/gallery",
+  "/indu-coral/page": "/indu-coral",
+  "/joint-ventures/page": "/joint-ventures",
+  "/page": "/",
+  "/redevelopment/page": "/redevelopment"
+}

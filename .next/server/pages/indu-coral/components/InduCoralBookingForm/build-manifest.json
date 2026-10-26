@@ -1,0 +1,21 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/indu-coral/components/InduCoralBookingForm": [
+      "static/chunks/42lc-vmvt__d_.js",
+      "static/chunks/3bq3083i3chno.js",
+      "static/chunks/22833giy_nu7s.css",
+      "static/chunks/turbopack-3-ry682tkyiqk.js"
+    ]
+  },
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/indu-coral/components/InduCoralBookingForm": {"otherChunks":["static/chunks/42lc-vmvt__d_.js","static/chunks/3bq3083i3chno.js","static/chunks/22833giy_nu7s.css"],"runtimeModuleIds":[10783,15233]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}

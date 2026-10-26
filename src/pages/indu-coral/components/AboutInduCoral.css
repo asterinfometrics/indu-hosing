@@ -1,0 +1,517 @@
+/* ==========================================================================
+   Indu Coral: About Indu Coral & Specifications Section
+   ========================================================================== */
+
+.about-coral-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow-x: clip;
+}
+
+.about-coral-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1.8fr 1.05fr;
+  gap: 56px;
+  align-items: start;
+  min-width: 0;
+}
+
+/* ==========================================================================
+   Left Column: About Info & Specifications
+   ========================================================================== */
+
+.about-coral-left-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+}
+
+.about-coral-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px 0;
+}
+
+.about-coral-desc {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0 0 30px 0;
+  max-width: 780px;
+}
+
+/* Bullets List */
+.about-coral-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 44px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-coral-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+.about-coral-bullet-square {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  flex-shrink: 0;
+  border-radius: 1px;
+  margin-top: 8px;
+}
+
+/* Specifications Grid */
+.about-coral-specs {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+}
+
+.about-coral-specs-title {
+  font-family: var(--font-title);
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0 0 28px 0;
+  letter-spacing: -0.015em;
+}
+
+.about-coral-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+.about-coral-spec-pill {
+  background-color: #f5f5f5;
+  border: 1px solid #ECEEF1;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+  min-width: 0;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+
+
+.about-coral-spec-icon-box {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-primary, #0A63AD);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.about-coral-spec-icon-img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
+
+.about-coral-spec-label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   Right Column: CTA Cards (Book Site Visit & Talk to Our Team)
+   ========================================================================== */
+
+.about-coral-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Reusable Patterned CTA Card */
+.coral-cta-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0A63AD 0%, #41A6EF 100%);
+  padding: 36px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 28px rgba(10, 99, 173, 0.2);
+}
+
+.coral-cta-pattern {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--pattern-url);
+  background-repeat: repeat;
+  background-size: 360px auto;
+  opacity: 0.85;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.coral-cta-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Card 1: Book your site visit */
+.coral-calendar-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.coral-cta-title {
+  font-family: var(--font-title);
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+}
+
+.coral-cta-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+  max-width: 380px;
+}
+
+.coral-site-visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: var(--color-primary);
+  border-radius: 12px;
+  padding: 6px 6px 6px 18px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.coral-site-visit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+
+.coral-btn-arrow-box {
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+
+/* Card 2: Talk to our team */
+.coral-team-badge {
+  background-color: #ffffff;
+  color: var(--text-dark);
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.coral-team-desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+  max-width: 380px;
+}
+
+.coral-team-white-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.coral-logo-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: var(--color-primary, #0A63AD);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.coral-team-logo {
+  width: 58px;
+  height: auto;
+  object-fit: contain;
+}
+
+.coral-team-name {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-gray);
+  margin-bottom: 12px;
+}
+
+.coral-team-email {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.2s ease;
+}
+
+.coral-team-email:hover {
+  color: var(--color-primary, #0A63AD);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .about-coral-section {
+    padding: 60px 40px;
+  }
+
+  .about-coral-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-coral-title {
+    font-size: 38px;
+  }
+
+  .about-coral-specs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-coral-right-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-coral-section {
+    padding: 40px 20px;
+  }
+
+  .about-coral-title {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .about-coral-desc {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .about-coral-bullets {
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .about-coral-specs-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .about-coral-specs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-coral-spec-pill {
+    padding: 10px 12px;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .about-coral-spec-label {
+    font-size: 13px;
+    white-space: normal;
+    word-break: break-word;
+    min-width: 0;
+  }
+
+  .coral-cta-title {
+    font-size: 20px;
+  }
+
+  .about-coral-right-col {
+    grid-template-columns: 1fr;
+  }
+
+  .coral-cta-card {
+    padding: 28px 20px;
+  }
+
+  .coral-team-email {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-coral-section {
+    padding: 40px 20px;
+  }
+
+  .about-coral-title {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .about-coral-desc {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .about-coral-bullets li {
+    font-size: 14px;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .about-coral-bullet-square {
+    margin-top: 7px;
+  }
+
+  .about-coral-specs-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-coral-specs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-coral-spec-pill {
+    padding: 8px;
+    gap: 8px;
+    min-width: 0;
+    border-radius: 10px;
+  }
+
+  .about-coral-spec-icon-box {
+    height: 26px;
+    width: 26px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  .about-coral-spec-icon-box svg {
+    height: 14px;
+    width: 14px;
+  }
+
+  .about-coral-spec-label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.25;
+    white-space: normal;
+    word-break: break-word;
+    min-width: 0;
+  }
+
+  .coral-cta-title {
+    font-size: 20px;
+  }
+
+  .coral-cta-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .coral-team-badge {
+    font-size: 10px;
+  }
+
+  .coral-team-white-box {
+    padding: 24px 16px;
+  }
+
+  .coral-team-email {
+    font-size: 14.5px;
+  }
+}

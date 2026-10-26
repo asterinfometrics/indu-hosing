@@ -1,0 +1,354 @@
+/* ==========================================================================
+   Completed Projects: Projects Grid & Category Filters
+   ========================================================================== */
+
+.completed-grid-section {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.completed-grid-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Section Header & Category Filter
+   ========================================================================== */
+
+.completed-grid-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.completed-grid-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 0 0 20px 0;
+}
+
+.completed-grid-subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+}
+
+/* Filter Pills Bar */
+.completed-filter-bar {
+  display: inline-flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #ECEEF1;
+  border-radius: 16px;
+  padding: 8px;
+  gap: 12px;
+}
+
+.filter-tab-btn {
+  border: none;
+  background: transparent;
+  font-family: var(--font-title);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-dark);
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  white-space: nowrap;
+}
+
+.filter-tab-btn:hover {
+  color: #111827;
+}
+
+.filter-tab-btn.active {
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   3-Column Projects Grid
+   ========================================================================== */
+
+.completed-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+}
+
+/* Project Card */
+.completed-project-card {
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.completed-project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+
+}
+
+/* Image Wrap */
+.project-card-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+}
+
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.completed-project-card:hover .project-card-img {
+  transform: scale(1.04);
+}
+
+.project-status-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Card Body */
+.project-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card-title {
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark, #1A1A17);
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.project-card-location {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-gray, #757575);
+  margin: 0 0 16px 0;
+}
+
+/* Meta Information Row */
+.project-card-meta-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+.meta-icon {
+  color: #555555;
+  flex-shrink: 0;
+}
+
+
+
+/* Tag Row */
+.project-card-tag-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.project-card-tag {
+  background-color: #F1F7FE;
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .completed-grid-section {
+    padding: 60px 40px;
+  }
+
+  .completed-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .completed-grid-title {
+    font-size: 38px;
+  }
+
+  .completed-grid-subtitle {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .completed-grid-section {
+    padding: 40px 20px;
+  }
+
+  .completed-grid-header {
+    margin-bottom: 36px;
+  }
+
+  .completed-grid-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .completed-grid-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .completed-filter-bar {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .filter-tab-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .completed-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card-image-wrap {
+    height: 240px;
+  }
+
+  .project-card-meta-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .meta-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .completed-grid-section {
+    padding: 40px 20px;
+  }
+
+  .completed-grid-header {
+    margin-bottom: 28px;
+  }
+
+  .completed-grid-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .completed-grid-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .completed-filter-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    gap: 4px;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  .filter-tab-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    padding: 14px 4px;
+  }
+
+  .project-card-image-wrap {
+    height: 200px;
+  }
+
+  .project-card-body {
+    padding: 18px 16px;
+  }
+
+  .project-card-title {
+    font-size: 18px;
+  }
+
+  .project-card-location {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .meta-item {
+    font-size: 13px;
+  }
+
+  .project-card-tag {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

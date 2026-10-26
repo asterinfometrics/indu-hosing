@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/indu-coral/layout,_N_T_/indu-coral/page,_N_T_/indu-coral"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/indu-coral/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/c991fa34c03c7cfd4ecb9d21f35c8a4286de6e1dd6ca2e42831b4b9aaa73bd48/$/indu-coral",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/indu-coral/page"
+    },
+    "isFallback": false
+  }
+}

@@ -1,0 +1,96 @@
+import React from 'react';
+import Link from 'next/link';
+import ourStoryImg from '../../../assets/about-us/our-story.webp';
+import './OurStory.css';
+import Image from 'next/image';
+
+export const OurStory: React.FC = () => {
+  return (
+    <section className="our-story-section">
+      <div className="our-story-container">
+        {/* Top Badge: Outside the grid */}
+        <div className="our-story-badge">
+          <span className="our-story-badge-dot" aria-hidden="true" />
+          <span>Our Story</span>
+        </div>
+
+        <div className="our-story-grid">
+          {/* Left Column: Unified Card with image & quote inside */}
+          <div className="our-story-cards-col">
+            <div className="our-story-card">
+              {/* Handshake Image inside the card */}
+              <div className="our-story-image-box">
+                <Image
+                  src={ourStoryImg}
+                  alt="Indu Housing partnership and trust handshake"
+                  className="our-story-img"
+                />
+              </div>
+
+              {/* Quote details inside the card */}
+              <div className="our-story-quote-content">
+                <div className="our-story-quote-top">
+                  <div className="our-story-quote-icon" aria-hidden="true">
+                    <svg width="28" height="20" viewBox="0 0 85 60" fill="currentColor">
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M56.5606 26.1396C57.216 22.472 58.4848 19.5437 60.5189 16.947C63.2453 13.4832 67.6374 10.2469 74.7655 6.8068C75.2209 6.61302 75.6383 6.3317 75.9925 5.97991C76.3466 5.62811 76.6301 5.21319 76.8256 4.76031C77.0212 4.30744 77.1248 3.82606 77.1302 3.3454C77.1355 2.86473 77.0425 2.39481 76.8568 1.96415C76.671 1.53349 76.3965 1.15108 76.0497 0.840133C75.7029 0.529182 75.2912 0.296174 74.8395 0.155256C74.3878 0.0143377 73.9056 -0.0315441 73.4221 0.0203769C72.9387 0.0722978 72.464 0.220945 72.027 0.457302C64.408 4.12484 58.803 7.99614 55.0122 12.8246C51.1491 17.7336 49.461 23.2634 49.0113 29.6934L47.5203 51.0163C47.3665 53.2156 48.0948 55.3248 49.5449 56.8798C50.9951 58.4349 53.0483 59.3086 55.2529 59.3086H74.2529C76.4575 59.3086 78.6329 58.4349 80.3006 56.8798C81.9682 55.3248 82.9915 53.2156 83.1453 51.0163L84.305 34.4318C84.6251 29.8545 81.1608 26.1396 76.5723 26.1396H56.5606ZM9.06058 26.1396C9.71604 22.472 10.9848 19.5437 13.0189 16.947C15.7454 13.4832 20.1374 10.2469 27.2655 6.8068C27.7209 6.61302 28.1383 6.3317 28.4925 5.97991C28.8466 5.62811 29.1301 5.21319 29.3256 4.76031C29.5212 4.30744 29.6248 3.82606 29.6302 3.3454C29.6355 2.86473 29.5425 2.39481 29.3568 1.96415C29.171 1.53349 28.8964 1.15108 28.5497 0.840133C28.2029 0.529182 27.7912 0.296174 27.3395 0.155256C26.8878 0.0143377 26.4056 -0.0315441 25.9221 0.0203769C25.4387 0.0722978 24.964 0.220945 24.527 0.457302C16.908 4.12484 11.303 7.99614 7.51215 12.8246C3.64913 17.7336 1.96096 23.2634 1.51132 29.6934L0.0202803 51.0163C-0.133506 53.2156 0.594785 55.3248 2.04494 56.8798C3.4951 58.4349 5.54832 59.3086 5.54832 59.3086H26.7529C28.9575 59.3086 31.133 58.4349 32.8006 56.8798C34.4682 55.3248 35.4915 53.2156 35.6453 51.0163L36.805 34.4318C37.1251 29.8545 33.6608 26.1396 29.0723 26.1396H9.06058Z"
+                      />
+                    </svg>
+                  </div>
+                  <p className="our-story-quote-text">
+                    Our culture, our ideas, our practices, our environmental concern and our team work lead us to creating superior values for people and communities around us.
+                  </p>
+                </div>
+
+                <div className="our-story-quote-bottom">
+                  <div className="our-story-quote-divider" />
+                  <div className="our-story-author">
+                    <h4 className="our-story-author-role">S.P.Babu Vijay</h4>
+                    <p className="our-story-author-company">Managing Director</p>
+                    <p className="our-story-author-company">Indu Housing Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Heading, Story & Call-to-Action */}
+          <div className="our-story-content-col">
+            <div className="our-story-content-top">
+              <h2 className="our-story-title">
+                In 2000, Chennai gained a builder who chose trust over the hard sell.
+              </h2>
+
+              <p className="our-story-description">
+                Indu Housing Development was founded by Shri S.P. Babu Vijay on a simple belief: give honest advice, not a sales pitch. That principle has shaped every villa, house and apartment we've built since — no pressure, no overpromising, just straight answers about what a home will actually cost, take and become.
+              </p>
+            </div>
+
+            <Link href="/contact" className="btn-primary-blue our-story-btn">
+              <span>Schedule a Call</span>
+              <span className="btn-icon-box">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OurStory;

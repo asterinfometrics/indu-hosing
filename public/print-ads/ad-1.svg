@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 830" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#081E36" />
+      <stop offset="28%" stop-color="#0E3259" />
+      <stop offset="65%" stop-color="#144373" />
+      <stop offset="100%" stop-color="#092038" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6D365" />
+      <stop offset="100%" stop-color="#FDA085" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F4F7FB" />
+    </linearGradient>
+
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Poster Base -->
+  <rect width="600" height="830" fill="url(#bgGrad)" />
+
+  <!-- Outer Border Frame -->
+  <rect x="14" y="14" width="572" height="802" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1.5" />
+  <rect x="18" y="18" width="564" height="794" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+
+  <!-- Top Header Area -->
+  <!-- 25 Years Badge -->
+  <g transform="translate(42, 36)">
+    <circle cx="24" cy="24" r="22" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5" />
+    <text x="24" y="27" font-family="'Outfit', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">25</text>
+    <text x="24" y="38" font-family="'Onest', sans-serif" font-size="7" font-weight="700" fill="#F6D365" letter-spacing="1" text-anchor="middle">YEARS</text>
+  </g>
+
+  <!-- Logo (Top Center / Right) -->
+  <g transform="translate(420, 36)">
+    <!-- House icon -->
+    <path d="M30 6 L12 20 L16 20 L16 38 L44 38 L44 20 L48 20 Z" fill="#FFFFFF" fill-opacity="0.9" />
+    <path d="M25 24 L35 24 L35 38 L25 38 Z" fill="#0E3259" />
+    <text x="60" y="22" font-family="'Outfit', sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" letter-spacing="2">INDU HOUSING</text>
+    <text x="60" y="34" font-family="'Onest', sans-serif" font-size="8" font-weight="500" fill="#A0C4E8" letter-spacing="1">CHENNAI &bull; BESANT NAGAR</text>
+  </g>
+
+  <!-- Headline -->
+  <g transform="translate(42, 110)">
+    <text x="0" y="0" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#F6D365" letter-spacing="3">PRESENTING INDU CORAL &bull; BESANT NAGAR</text>
+    <text x="0" y="32" font-family="'Outfit', sans-serif" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">SPACE,</text>
+    <text x="0" y="66" font-family="'Outfit', sans-serif" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">THOUGHTFULLY COMPOSED.</text>
+    <text x="0" y="94" font-family="'Onest', sans-serif" font-size="13" font-weight="400" fill="#CFE2F7">A boutique coastal sanctuary of 3 &amp; 4 BHK sea-view residences</text>
+  </g>
+
+  <!-- Main Hero Building Image Graphic -->
+  <g transform="translate(42, 230)">
+    <!-- Building Card Frame -->
+    <rect width="516" height="270" rx="8" fill="#0B233D" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1.5" filter="url(#shadow)" />
+
+    <!-- Sky background -->
+    <rect x="2" y="2" width="512" height="266" rx="6" fill="#1B426E" />
+
+    <!-- Stylized Modern Building Illustration -->
+    <!-- Building Block 1 -->
+    <rect x="60" y="35" width="180" height="200" fill="#F0F4F8" />
+    <rect x="250" y="20" width="200" height="215" fill="#E2EBF4" />
+
+    <!-- Windows & Balconies -->
+    <g fill="#0B2544" opacity="0.85">
+      <!-- Left Wing Windows -->
+      <rect x="80" y="55" width="36" height="28" rx="2" />
+      <rect x="130" y="55" width="36" height="28" rx="2" />
+      <rect x="180" y="55" width="36" height="28" rx="2" />
+
+      <rect x="80" y="100" width="36" height="28" rx="2" />
+      <rect x="130" y="100" width="36" height="28" rx="2" />
+      <rect x="180" y="100" width="36" height="28" rx="2" />
+
+      <rect x="80" y="145" width="36" height="28" rx="2" />
+      <rect x="130" y="145" width="36" height="28" rx="2" />
+      <rect x="180" y="145" width="36" height="28" rx="2" />
+
+      <rect x="80" y="190" width="36" height="28" rx="2" />
+      <rect x="130" y="190" width="36" height="28" rx="2" />
+      <rect x="180" y="190" width="36" height="28" rx="2" />
+
+      <!-- Right Wing Windows -->
+      <rect x="270" y="45" width="45" height="30" rx="2" />
+      <rect x="330" y="45" width="45" height="30" rx="2" />
+      <rect x="390" y="45" width="45" height="30" rx="2" />
+
+      <rect x="270" y="90" width="45" height="30" rx="2" />
+      <rect x="330" y="90" width="45" height="30" rx="2" />
+      <rect x="390" y="90" width="45" height="30" rx="2" />
+
+      <rect x="270" y="135" width="45" height="30" rx="2" />
+      <rect x="330" y="135" width="45" height="30" rx="2" />
+      <rect x="390" y="135" width="45" height="30" rx="2" />
+
+      <rect x="270" y="180" width="45" height="30" rx="2" />
+      <rect x="330" y="180" width="45" height="30" rx="2" />
+      <rect x="390" y="180" width="45" height="30" rx="2" />
+    </g>
+
+    <!-- Warm lights in windows -->
+    <g fill="#FBD38D" opacity="0.65">
+      <rect x="84" y="58" width="14" height="22" />
+      <rect x="184" y="103" width="14" height="22" />
+      <rect x="274" y="93" width="20" height="24" />
+      <rect x="394" y="138" width="20" height="24" />
+      <rect x="334" y="183" width="20" height="24" />
+    </g>
+
+    <!-- Balcony Railings -->
+    <g stroke="#94A3B8" stroke-width="2" opacity="0.8">
+      <line x1="75" y1="88" x2="225" y2="88" />
+      <line x1="75" y1="133" x2="225" y2="133" />
+      <line x1="75" y1="178" x2="225" y2="178" />
+
+      <line x1="265" y1="80" x2="440" y2="80" />
+      <line x1="265" y1="125" x2="440" y2="125" />
+      <line x1="265" y1="170" x2="440" y2="170" />
+    </g>
+
+    <!-- Ground / Landscaping -->
+    <rect x="2" y="235" width="512" height="33" fill="#14532D" opacity="0.9" />
+    <!-- Trees -->
+    <circle cx="45" cy="225" r="22" fill="#166534" />
+    <circle cx="85" cy="232" r="16" fill="#15803D" />
+    <circle cx="465" cy="228" r="24" fill="#166534" />
+    <circle cx="430" cy="235" r="18" fill="#15803D" />
+
+    <!-- Overlay Badge on Image -->
+    <g transform="translate(16, 16)">
+      <rect width="170" height="34" rx="4" fill="#0A1E33" fill-opacity="0.88" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1" />
+      <text x="14" y="22" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="1">ACTUAL ELEVATION</text>
+    </g>
+  </g>
+
+  <!-- Key Specs Feature Bar -->
+  <g transform="translate(42, 520)">
+    <rect width="516" height="52" rx="6" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" />
+
+    <text x="30" y="32" font-family="'Outfit', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">3 &amp; 4 BHK</text>
+    <text x="110" y="32" font-family="'Onest', sans-serif" font-size="12" font-weight="400" fill="#93C5FD">RESIDENCES</text>
+
+    <line x1="210" y1="12" x2="210" y2="40" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" />
+
+    <text x="240" y="32" font-family="'Outfit', sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BESANT NAGAR</text>
+    <text x="365" y="32" font-family="'Onest', sans-serif" font-size="12" font-weight="400" fill="#93C5FD">CHENNAI</text>
+
+    <line x1="440" y1="12" x2="440" y2="40" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" />
+
+    <text x="460" y="32" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#F6D365">G+5 FLOORS</text>
+  </g>
+
+  <!-- 3 Lifestyle Feature Boxes -->
+  <g transform="translate(42, 590)">
+    <!-- Box 1 -->
+    <rect x="0" y="0" width="162" height="78" rx="6" fill="#0D2C4D" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1" />
+    <text x="16" y="26" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">SEAFRONT BREEZE</text>
+    <text x="16" y="46" font-family="'Onest', sans-serif" font-size="10" font-weight="400" fill="#93C5FD">Steps from Elliot's</text>
+    <text x="16" y="60" font-family="'Onest', sans-serif" font-size="10" font-weight="400" fill="#93C5FD">Promenade Beach</text>
+
+    <!-- Box 2 -->
+    <rect x="177" y="0" width="162" height="78" rx="6" fill="#0D2C4D" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1" />
+    <text x="193" y="26" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">PRIVATE BALCONIES</text>
+    <text x="193" y="46" font-family="'Onest', sans-serif" font-size="10" font-weight="400" fill="#93C5FD">Panoramic ocean &amp;</text>
+    <text x="193" y="60" font-family="'Onest', sans-serif" font-size="10" font-weight="400" fill="#93C5FD">neighborhood views</text>
+
+    <!-- Box 3 -->
+    <rect x="354" y="0" width="162" height="78" rx="6" fill="#0D2C4D" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1" />
+    <text x="370" y="26" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">EV &amp; CAR PARKING</text>
+    <text x="370" y="46" font-family="'Onest', sans-serif" font-size="10" font-weight="400" fill="#93C5FD">Dedicated stilt bays</text>
+    <text x="370" y="60" font-family="'Onest', sans-serif" font-size="10" font-weight="400" fill="#93C5FD">&amp; EV charging points</text>
+  </g>
+
+  <!-- Bottom CTA Footer -->
+  <g transform="translate(42, 690)">
+    <rect width="516" height="96" rx="8" fill="#FFFFFF" />
+
+    <text x="24" y="32" font-family="'Onest', sans-serif" font-size="10" font-weight="700" fill="#64748B" letter-spacing="1.5">FOR BOOKINGS &amp; SITE VISITS</text>
+    <text x="24" y="64" font-family="'Outfit', sans-serif" font-size="24" font-weight="800" fill="#0A2B4C" letter-spacing="0.5">98848 80101 &bull; 98418 92277</text>
+
+    <!-- Web & RERA info -->
+    <text x="24" y="82" font-family="'Onest', sans-serif" font-size="9" font-weight="500" fill="#64748B">www.induhousing.com &bull; RERA Approved</text>
+
+    <!-- Button Graphic on Right -->
+    <g transform="translate(385, 26)">
+      <rect width="112" height="44" rx="6" fill="#0A63AD" />
+      <text x="56" y="27" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">ENQUIRE</text>
+    </g>
+  </g>
+</svg>

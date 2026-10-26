@@ -1,0 +1,392 @@
+.vm-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  color: var(--text-dark, #1A1A17);
+}
+
+.vm-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header */
+.vm-header {
+  margin-bottom: 60px;
+}
+
+.vm-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.vm-tag-square {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  display: inline-block;
+  border-radius: 1px;
+}
+
+.vm-tag-text {
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary, #0A63AD);
+  letter-spacing: -0.01em;
+}
+
+.vm-title {
+  font-family: var(--font-title);
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--text-dark, #1A1A17);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+/* 3-Column Grid */
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.vm-card {
+  box-sizing: border-box;
+}
+
+/* Column 1: Vision Card */
+.vm-vision-card {
+  background-color: #f5f5f5;
+  border-radius: 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vm-vision-content {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.vm-card-title {
+  font-family: var(--font-title);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary, #0A63AD);
+  margin: 0 0 18px 0;
+  line-height: 1;
+}
+
+.vm-card-description {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #444444;
+  margin: 0;
+}
+
+.vm-image-container.vm-image-box-1 {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 36px;
+  background-color: #f1f5f9;
+}
+
+.vm-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.vm-image-box-1:hover .vm-image,
+.vm-center-feature-card:hover .vm-center-image {
+  transform: scale(1.03);
+}
+
+.vm-image-gradient-top {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.25) 45%,
+      rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.vm-image-overlay-text-top {
+  position: absolute;
+  top: 22px;
+  left: 24px;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.vm-image-overlay-text-top h4 {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+/* Column 2: Center Feature Card */
+.vm-center-feature-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 580px;
+  background-color: #f1f5f9;
+}
+
+.vm-center-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vm-center-gradient-bottom {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(0, 0, 0, 0.45) 70%,
+      rgba(0, 0, 0, 0.88) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.vm-center-overlay-content {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.vm-center-title {
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 6px 0;
+  color: #ffffff;
+}
+
+.vm-center-subtitle {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+/* Column 3: Mission Card */
+.vm-mission-card {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vm-mission-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+  flex: 1;
+}
+
+.vm-feature-item {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.vm-feature-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: var(--pattern-url);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  opacity: 0.20;
+  pointer-events: none;
+}
+
+.vm-feature-content {
+  position: relative;
+  z-index: 2;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.vm-feature-icon-wrapper {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.vm-feature-icon {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+.vm-feature-icon-wide {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+}
+
+.vm-feature-title {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark, #1A1A17);
+  margin: 0 0 10px 0;
+}
+
+.vm-feature-description {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-gray, #666666);
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .vm-section {
+    padding: 50px 32px 70px;
+  }
+
+  .vm-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .vm-center-feature-card {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vm-section {
+    padding: 40px 20px;
+  }
+
+  .vm-title {
+    font-size: 30px;
+  }
+
+  .vm-center-feature-card {
+    min-height: 380px;
+  }
+
+  .vm-vision-card,
+  .vm-mission-card {
+    padding: 24px 20px;
+  }
+
+  .vm-card-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vm-section {
+    padding: 40px 20px;
+  }
+
+  .vm-tag {
+    margin-bottom: 20px;
+  }
+
+  .vm-header {
+    margin-bottom: 40px;
+  }
+
+  .vm-title {
+    font-size: 24px;
+  }
+
+  .vm-center-feature-card {
+    border-radius: 16px;
+    min-height: 320px;
+  }
+
+  .vm-center-title {
+    font-size: 20px;
+  }
+
+  .vm-center-subtitle {
+    font-size: 13px;
+  }
+
+  .vm-vision-card,
+  .vm-mission-card {
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .vm-vision-content {
+    border-radius: 16px;
+  }
+
+  .vm-card-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    padding-left: 6px;
+  }
+
+  .vm-feature-content {
+    padding: 14px 16px;
+  }
+
+  .vm-feature-title {
+    font-size: 15px;
+  }
+
+  .vm-feature-description {
+    font-size: 13px;
+  }
+
+  .vm-mission-features {
+    margin-top: 0;
+  }
+}

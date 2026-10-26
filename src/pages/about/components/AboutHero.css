@@ -1,0 +1,357 @@
+/* ==========================================================================
+   About Us Hero Section
+   ========================================================================== */
+
+.about-hero-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-hero-container {
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1.02fr 1.8fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* ==========================================================================
+   Left Column: Heading, Subtitle & CTA
+   ========================================================================== */
+
+.about-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary, #0A63AD);
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  letter-spacing: -0.01em;
+}
+
+.about-hero-badge-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-primary, #0A63AD);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.about-hero-title {
+  font-family: var(--font-title);
+  font-size: 52px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 0 0 24px 0;
+}
+
+.about-hero-description {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.6;
+  max-width: 450px;
+  margin: 0 0 36px 0;
+}
+
+.about-hero-btn {
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  border-radius: 10px;
+  padding: 6px 6px 6px 20px;
+  box-shadow: 0 4px 14px rgba(10, 99, 173, 0.2);
+}
+
+/* ==========================================================================
+   Right Column: Hero Image & Two Stat Cards
+   ========================================================================== */
+
+.about-hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.about-hero-image-card {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Bottom Stats Row */
+.about-hero-stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+/* 1. Blue Card: Completed Projects */
+.about-stat-card-blue {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-primary);
+  border-radius: 18px;
+  padding: 24px 24px 22px 24px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px rgba(10, 99, 173, 0.16);
+}
+
+.about-stat-heading-white {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  display: block;
+}
+
+.about-stat-number-white {
+  font-family: var(--font-title);
+  font-size: 44px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.about-stat-desc-white {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.45;
+  max-width: 260px;
+}
+
+/* 2. White Card: Years of Trust */
+.about-stat-card-white {
+  position: relative;
+  overflow: hidden;
+  background: #f5f5f5;
+  border: 1px solid #E5E7EB;
+  border-radius: 18px;
+  padding: 24px 24px 22px 24px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.02);
+}
+
+.about-stat-heading-dark {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  display: block;
+}
+
+.about-stat-number-dark {
+  font-family: var(--font-title);
+  font-size: 44px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.about-stat-desc-dark {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.45;
+  max-width: 260px;
+}
+
+/* Card Content Layering & Vector Overlays */
+.about-stat-top,
+.about-stat-bottom {
+  position: relative;
+  z-index: 2;
+}
+
+.about-stat-vector {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.about-stat-vector-cp {
+  opacity: 0.75;
+  transform: translate(6%, 6%) scale(1.08);
+  transform-origin: bottom right;
+}
+
+.about-stat-vector-yot {
+  opacity: 0.75;
+  transform: translate(4%, 4%) scale(1.04);
+  transform-origin: bottom right;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .about-hero-left {
+    max-width: 680px;
+  }
+
+  .about-hero-title {
+    font-size: 42px;
+  }
+
+  .about-hero-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    padding: 40px 0 40px 0;
+  }
+
+  .about-hero-badge {
+    margin-bottom: 20px;
+  }
+
+  .about-hero-container {
+    padding: 0 20px;
+  }
+
+  .about-hero-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .about-hero-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .about-hero-img {
+    height: 240px;
+  }
+
+  .about-hero-stats-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-stat-card-blue,
+  .about-stat-card-white {
+    min-height: 150px;
+    padding: 20px;
+  }
+
+  .about-stat-top {
+    margin-bottom: 34px;
+  }
+
+  .about-stat-number-white,
+  .about-stat-number-dark {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-section {
+    padding: 30px 0 40px 0;
+  }
+
+  .about-hero-badge {
+    margin-bottom: 20px;
+  }
+
+  .about-hero-container {
+    padding: 0 20px;
+  }
+
+  .about-hero-title {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .about-hero-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .about-hero-img {
+    height: 200px;
+    border-radius: 16px;
+  }
+
+  .about-stat-card-blue,
+  .about-stat-card-white {
+    min-height: 130px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .about-stat-top {
+    margin-bottom: 34px;
+  }
+
+  .about-stat-number-white,
+  .about-stat-number-dark {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .about-stat-desc-white,
+  .about-stat-desc-dark {
+    font-size: 13.5px;
+  }
+}

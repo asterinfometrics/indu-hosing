@@ -1,0 +1,218 @@
+/* ==========================================================================
+   Career: Hero Section (Matching Figma Mockup)
+   ========================================================================== */
+
+.career-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  height: 80vh;
+  max-height: 720px;
+  background-color: var(--color-primary, #0A63AD);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Background Blueprint Illustration */
+.career-hero-vector-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.career-hero-vector {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+  opacity: 0.85;
+}
+
+/* Gradient Overlay Fading into Solid Primary Blue at Bottom */
+.career-hero-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,
+      var(--color-primary, #0A63AD) 0%,
+      rgba(10, 99, 173, 0.85) 15%,
+      rgba(10, 99, 173, 0.4) 35%,
+      rgba(10, 99, 173, 0.05) 60%,
+      transparent 80%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Navbar Wrapper inside Hero */
+.career-hero-nav-wrapper {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  padding-top: 20px;
+}
+
+/* Foreground Centered Content */
+.career-hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 920px;
+  padding: 0 24px;
+  margin: auto 0;
+  box-sizing: border-box;
+}
+
+.career-hero-title {
+  font-family: var(--font-title);
+  font-size: 58px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 18px 0;
+}
+
+.career-hero-subtitle {
+  font-family: var(--font-title);
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.55;
+  max-width: 760px;
+  margin: 0 0 32px 0;
+}
+
+.career-subtitle-break {
+  display: block;
+}
+
+/* Apply Now CTA Button */
+.career-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: var(--color-primary, #0A63AD);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  padding: 6px 7px 6px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.career-hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.career-hero-btn-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background-color: var(--color-primary, #0A63AD);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.career-hero-btn:hover .career-hero-btn-icon {
+  background-color: var(--color-primary-dark, #123e70);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .career-hero-section {
+    min-height: 520px;
+    height: 75vh;
+  }
+
+  .career-hero-title {
+    font-size: 48px;
+    line-height: 1.18;
+  }
+
+  .career-hero-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-hero-section {
+    min-height: 480px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .career-hero-nav-wrapper {
+    padding-top: 12px;
+  }
+
+  .career-hero-content {
+    margin: 40px 0 20px 0;
+  }
+
+  .career-hero-title {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
+  .career-hero-subtitle {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .career-subtitle-break {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-hero-section {
+    min-height: 440px;
+  }
+
+  .career-hero-content {
+    padding: 0 20px;
+    margin: 30px 0 10px 0;
+  }
+
+  .career-hero-title {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .career-hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}

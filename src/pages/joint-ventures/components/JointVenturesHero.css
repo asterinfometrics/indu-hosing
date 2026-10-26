@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Joint Ventures: Hero Section
+   ========================================================================== */
+
+.jv-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 660px;
+  background-color: var(--color-primary, #0A63AD);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 96px;
+  box-sizing: border-box;
+}
+
+/* Background Architecture Blueprint Line Art */
+.jv-hero-vector-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.jv-hero-vector {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+  opacity: 0.7;
+}
+
+/* Gradient Overlay Fading into Solid Primary Blue at Bottom */
+.jv-hero-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,
+      var(--color-primary, #0A63AD) 0%,
+      rgba(10, 99, 173, 0.85) 15%,
+      rgba(10, 99, 173, 0.4) 30%,
+      rgba(10, 99, 173, 0.05) 50%,
+      transparent 80%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Navbar Wrapper inside Hero */
+.jv-hero-nav-wrapper {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+/* Foreground Centered Content */
+.jv-hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 860px;
+  padding: 0 24px;
+  margin: auto 0;
+  box-sizing: border-box;
+}
+
+.jv-hero-title {
+  font-family: var(--font-title);
+  font-size: 52px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 0 0 20px 0;
+}
+
+.jv-hero-subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 740px;
+  margin: 0 0 40px 0;
+
+}
+
+.jv-hero-btn {
+  font-size: 15px;
+  font-weight: 500;
+  height: 48px;
+  border-radius: 10px;
+  padding: 6px 6px 6px 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .jv-hero-section {
+    min-height: 580px;
+    padding-bottom: 72px;
+  }
+
+  .jv-hero-title {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+
+  .jv-hero-subtitle {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jv-hero-section {
+    min-height: 520px;
+    padding-bottom: 0;
+  }
+
+  .jv-hero-nav-wrapper {
+    padding-top: 12px;
+    margin-bottom: 30px;
+  }
+
+  .jv-hero-title {
+    font-size: 34px;
+    line-height: 1.22;
+    margin-bottom: 16px;
+  }
+
+  .jv-hero-subtitle {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jv-hero-section {
+    min-height: 520px;
+    padding-bottom: 0;
+  }
+
+  .jv-hero-content {
+    padding: 0 20px;
+    margin: 40px 0;
+  }
+
+  .jv-hero-title {
+    font-size: 26px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .jv-hero-subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/joint-ventures/components/JointVenturesForm": [
+      "static/chunks/05_bw-bhqva6j.js",
+      "static/chunks/1a31c0rymvxxf.css",
+      "static/chunks/turbopack-3-ry682tkyiqk.js"
+    ]
+  },
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/joint-ventures/components/JointVenturesForm": {"otherChunks":["static/chunks/05_bw-bhqva6j.js","static/chunks/1a31c0rymvxxf.css"],"runtimeModuleIds":[10783,60311]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}

@@ -1,0 +1,20 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/about/components/OurJourney": [
+      "static/chunks/42qxsrjov04vi.css",
+      "static/chunks/3awnu4vhm6386.js",
+      "static/chunks/turbopack-3-ry682tkyiqk.js"
+    ]
+  },
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/about/components/OurJourney": {"otherChunks":["static/chunks/42qxsrjov04vi.css","static/chunks/3awnu4vhm6386.js"],"runtimeModuleIds":[10783,57930]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}

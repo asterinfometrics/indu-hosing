@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 830" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWarm" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF6" />
+      <stop offset="40%" stop-color="#F7F3EB" />
+      <stop offset="100%" stop-color="#EFE9DE" />
+    </linearGradient>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2725B" />
+      <stop offset="100%" stop-color="#C85A45" />
+    </linearGradient>
+
+    <filter id="adShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Poster Base -->
+  <rect width="600" height="830" fill="url(#bgWarm)" />
+
+  <!-- Outer Border Frame -->
+  <rect x="14" y="14" width="572" height="802" fill="none" stroke="#2B2D42" stroke-opacity="0.2" stroke-width="1.5" />
+  <rect x="18" y="18" width="564" height="794" fill="none" stroke="#2B2D42" stroke-opacity="0.08" stroke-width="1" />
+
+  <!-- Top Header Area -->
+  <!-- 25 Years Badge -->
+  <g transform="translate(42, 34)">
+    <circle cx="24" cy="24" r="22" fill="#2E7D32" stroke="#1B5E20" stroke-width="1.5" />
+    <text x="24" y="27" font-family="'Outfit', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">25</text>
+    <text x="24" y="38" font-family="'Onest', sans-serif" font-size="7" font-weight="700" fill="#A5D6A7" letter-spacing="1" text-anchor="middle">YEARS</text>
+  </g>
+
+  <!-- Logo (Top Center / Right) -->
+  <g transform="translate(420, 36)">
+    <!-- House icon -->
+    <path d="M30 6 L12 20 L16 20 L16 38 L44 38 L44 20 L48 20 Z" fill="#1E293B" />
+    <path d="M25 24 L35 24 L35 38 L25 38 Z" fill="#FFFFFF" />
+    <text x="60" y="22" font-family="'Outfit', sans-serif" font-size="14" font-weight="800" fill="#1E293B" letter-spacing="2">INDU HOUSING</text>
+    <text x="60" y="34" font-family="'Onest', sans-serif" font-size="8" font-weight="600" fill="#64748B" letter-spacing="1">CHENNAI &bull; BESANT NAGAR</text>
+  </g>
+
+  <!-- Headline -->
+  <g transform="translate(42, 110)">
+    <text x="0" y="0" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#C85A45" letter-spacing="2.5">TRUST BUILT BRICK BY BRICK</text>
+    <text x="0" y="32" font-family="'Outfit', sans-serif" font-size="30" font-weight="800" fill="#1E293B" letter-spacing="-0.5">COME SEE WHAT</text>
+    <text x="0" y="66" font-family="'Outfit', sans-serif" font-size="30" font-weight="800" fill="#1E293B" letter-spacing="-0.5">EXPERIENCE BUILDS.</text>
+    <text x="0" y="94" font-family="'Onest', sans-serif" font-size="13" font-weight="500" fill="#475569">25+ completed landmark projects in Besant Nagar &amp; South Chennai</text>
+  </g>
+
+  <!-- 3 Project Elevation Cards Row -->
+  <g transform="translate(42, 230)">
+    <!-- Project 1: Sobitha -->
+    <g transform="translate(0, 0)">
+      <rect width="162" height="110" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#adShadow)" />
+      <rect x="8" y="8" width="146" height="66" rx="4" fill="#E2E8F0" />
+      <!-- Building shape inside -->
+      <rect x="25" y="16" width="112" height="58" fill="#94A3B8" />
+      <g fill="#CBD5E1">
+        <rect x="35" y="24" width="20" height="14" />
+        <rect x="65" y="24" width="20" height="14" />
+        <rect x="95" y="24" width="20" height="14" />
+        <rect x="35" y="44" width="20" height="14" />
+        <rect x="65" y="44" width="20" height="14" />
+        <rect x="95" y="44" width="20" height="14" />
+      </g>
+      <text x="81" y="94" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#1E293B" text-anchor="middle">SOBITHA</text>
+      <text x="81" y="104" font-family="'Onest', sans-serif" font-size="8" font-weight="500" fill="#64748B" text-anchor="middle">BESANT NAGAR &bull; COMPLETED</text>
+    </g>
+
+    <!-- Project 2: Subhiksham -->
+    <g transform="translate(177, 0)">
+      <rect width="162" height="110" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#adShadow)" />
+      <rect x="8" y="8" width="146" height="66" rx="4" fill="#E2E8F0" />
+      <!-- Building shape inside -->
+      <rect x="20" y="14" width="122" height="60" fill="#64748B" />
+      <g fill="#E2E8F0">
+        <rect x="30" y="22" width="24" height="15" />
+        <rect x="68" y="22" width="24" height="15" />
+        <rect x="106" y="22" width="24" height="15" />
+        <rect x="30" y="44" width="24" height="15" />
+        <rect x="68" y="44" width="24" height="15" />
+        <rect x="106" y="44" width="24" height="15" />
+      </g>
+      <text x="81" y="94" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#1E293B" text-anchor="middle">SUBHIKSHAM</text>
+      <text x="81" y="104" font-family="'Onest', sans-serif" font-size="8" font-weight="500" fill="#64748B" text-anchor="middle">BESANT NAGAR &bull; COMPLETED</text>
+    </g>
+
+    <!-- Project 3: Swatham -->
+    <g transform="translate(354, 0)">
+      <rect width="162" height="110" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#adShadow)" />
+      <rect x="8" y="8" width="146" height="66" rx="4" fill="#E2E8F0" />
+      <!-- Building shape inside -->
+      <rect x="28" y="16" width="106" height="58" fill="#475569" />
+      <g fill="#CBD5E1">
+        <rect x="38" y="24" width="20" height="14" />
+        <rect x="71" y="24" width="20" height="14" />
+        <rect x="104" y="24" width="20" height="14" />
+        <rect x="38" y="44" width="20" height="14" />
+        <rect x="71" y="44" width="20" height="14" />
+        <rect x="104" y="44" width="20" height="14" />
+      </g>
+      <text x="81" y="94" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#1E293B" text-anchor="middle">SWATHAM</text>
+      <text x="81" y="104" font-family="'Onest', sans-serif" font-size="8" font-weight="500" fill="#64748B" text-anchor="middle">BESANT NAGAR &bull; COMPLETED</text>
+    </g>
+  </g>
+
+  <!-- Big Numbers Stats Ribbon -->
+  <g transform="translate(42, 360)">
+    <rect width="516" height="58" rx="6" fill="#1E293B" />
+    <text x="40" y="38" font-family="'Outfit', sans-serif" font-size="22" font-weight="800" fill="#F6D365">25+</text>
+    <text x="95" y="36" font-family="'Onest', sans-serif" font-size="11" font-weight="500" fill="#FFFFFF">Completed In</text>
+    <text x="95" y="47" font-family="'Onest', sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Besant Nagar</text>
+
+    <line x1="190" y1="12" x2="190" y2="46" stroke="#475569" stroke-width="1" />
+
+    <text x="215" y="38" font-family="'Outfit', sans-serif" font-size="22" font-weight="800" fill="#F6D365">40+</text>
+    <text x="270" y="36" font-family="'Onest', sans-serif" font-size="11" font-weight="500" fill="#FFFFFF">Years of</text>
+    <text x="270" y="47" font-family="'Onest', sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Combined Trust</text>
+
+    <line x1="380" y1="12" x2="380" y2="46" stroke="#475569" stroke-width="1" />
+
+    <text x="405" y="38" font-family="'Outfit', sans-serif" font-size="22" font-weight="800" fill="#F6D365">4</text>
+    <text x="430" y="36" font-family="'Onest', sans-serif" font-size="11" font-weight="500" fill="#FFFFFF">Ongoing</text>
+    <text x="430" y="47" font-family="'Onest', sans-serif" font-size="11" font-weight="500" fill="#CBD5E1">Landmarks</text>
+  </g>
+
+  <!-- Indu Coral Feature Building Frame -->
+  <g transform="translate(42, 436)">
+    <rect width="516" height="236" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#adShadow)" />
+
+    <!-- Sky -->
+    <rect x="2" y="2" width="512" height="175" rx="6" fill="#EBF2F7" />
+
+    <!-- Building facade -->
+    <rect x="80" y="25" width="356" height="152" fill="#DCE5ED" />
+    <g fill="#1E293B">
+      <rect x="100" y="40" width="40" height="25" rx="2" />
+      <rect x="160" y="40" width="40" height="25" rx="2" />
+      <rect x="220" y="40" width="40" height="25" rx="2" />
+      <rect x="320" y="40" width="40" height="25" rx="2" />
+      <rect x="380" y="40" width="40" height="25" rx="2" />
+
+      <rect x="100" y="75" width="40" height="25" rx="2" />
+      <rect x="160" y="75" width="40" height="25" rx="2" />
+      <rect x="220" y="75" width="40" height="25" rx="2" />
+      <rect x="320" y="75" width="40" height="25" rx="2" />
+      <rect x="380" y="75" width="40" height="25" rx="2" />
+
+      <rect x="100" y="110" width="40" height="25" rx="2" />
+      <rect x="160" y="110" width="40" height="25" rx="2" />
+      <rect x="220" y="110" width="40" height="25" rx="2" />
+      <rect x="320" y="110" width="40" height="25" rx="2" />
+      <rect x="380" y="110" width="40" height="25" rx="2" />
+    </g>
+
+    <!-- Warm windows -->
+    <g fill="#FBD38D">
+      <rect x="165" y="43" width="15" height="18" />
+      <rect x="225" y="78" width="15" height="18" />
+      <rect x="325" y="113" width="15" height="18" />
+    </g>
+
+    <!-- Project details bottom bar inside card -->
+    <rect x="2" y="177" width="512" height="57" fill="#FFFFFF" />
+    <text x="24" y="202" font-family="'Outfit', sans-serif" font-size="16" font-weight="800" fill="#1E293B">INDU CORAL &bull; BESANT NAGAR</text>
+    <text x="24" y="218" font-family="'Onest', sans-serif" font-size="11" font-weight="500" fill="#64748B">3 &amp; 4 BHK Luxury Residences | Elliot's Beach Promenade</text>
+
+    <text x="492" y="202" font-family="'Outfit', sans-serif" font-size="16" font-weight="800" fill="#C85A45" text-anchor="end">&#8377;2.43 CR*</text>
+    <text x="492" y="218" font-family="'Onest', sans-serif" font-size="10" font-weight="600" fill="#64748B" text-anchor="end">ONWARDS</text>
+  </g>
+
+  <!-- Bottom CTA Footer -->
+  <g transform="translate(42, 690)">
+    <rect width="516" height="96" rx="8" fill="#1E293B" />
+
+    <text x="24" y="32" font-family="'Onest', sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="1.5">FOR BOOKINGS &amp; REDEVELOPMENT INQUIRIES</text>
+    <text x="24" y="64" font-family="'Outfit', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">98848 80101 &bull; 98418 92277</text>
+    <text x="24" y="82" font-family="'Onest', sans-serif" font-size="9" font-weight="500" fill="#CBD5E1">www.induhousing.com &bull; RERA Approved</text>
+
+    <!-- Button Graphic on Right -->
+    <g transform="translate(385, 26)">
+      <rect width="112" height="44" rx="6" fill="#E2725B" />
+      <text x="56" y="27" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">ENQUIRE</text>
+    </g>
+  </g>
+</svg>
