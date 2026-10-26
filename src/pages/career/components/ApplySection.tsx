@@ -94,7 +94,7 @@ export const ApplySection: React.FC = () => {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          projectType: 'career',
+          projectType: 'Career',
           subject: `Career Application: ${formData.position} - ${formData.name}`,
           message: messageContent,
         }),
@@ -147,7 +147,7 @@ export const ApplySection: React.FC = () => {
           {/* Left Column: Living Room Image */}
           <div className="apply-image-col">
             <div className="apply-image-wrapper">
-              <Image  
+              <Image
                 src={livingRoomImg}
                 alt="Indu Housing Modern Living Space"
                 className="apply-image"

@@ -1,3 +1,0 @@
-module.exports=[[11857,(a,b,c)=>{b.exports=a.r(24951).vendored["react-rsc"].ReactServerDOMTurbopackServer},52573,a=>{let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/src/app/template.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/app/template.tsx","default");a.s(["default",0,b])},61915,a=>{var b=a.i(52573);a.n(b)}],43511,function(a){a.n(a.i(61915))}];
-
-//# sourceMappingURL=_1009x3duc8gio._.js.map

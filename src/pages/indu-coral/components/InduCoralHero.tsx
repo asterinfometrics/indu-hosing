@@ -62,8 +62,14 @@ export const InduCoralHero: React.FC = () => {
         <div className="indu-coral-hero-bottom-row">
           {/* Left CTA Button */}
           <div className="indu-coral-hero-cta-wrap">
-            <a href="#contact" className="indu-coral-btn-cta">
-              <span className="indu-coral-btn-text">Request Project Details</span>
+            <a
+              href="/Indu-Coral-Brochure.pdf"
+              download="Indu-Coral-Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="indu-coral-btn-cta"
+            >
+              <span className="indu-coral-btn-text">Download Brochure</span>
               <span className="indu-coral-btn-icon-box">
                 <svg
                   width="16"

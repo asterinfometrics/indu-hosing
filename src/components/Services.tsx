@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import Image, { type StaticImageData } from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -27,6 +27,7 @@ interface ServiceItem {
 export const Services: React.FC = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
   const cardsRef = useRef<(HTMLElement | null)[]>([]);
+  const triggerRef = useRef<ScrollTrigger | null>(null);
 
   const services: ServiceItem[] = [
     {
@@ -116,6 +117,7 @@ export const Services: React.FC = () => {
             invalidateOnRefresh: true,
           },
         });
+        triggerRef.current = tl.scrollTrigger as unknown as ScrollTrigger;
 
         // Step 1: Card 2 slides in over Card 1; Card 1 recedes slightly
         tl.to(
@@ -237,6 +239,7 @@ export const Services: React.FC = () => {
             invalidateOnRefresh: true,
           },
         });
+        triggerRef.current = tl.scrollTrigger as unknown as ScrollTrigger;
 
         // Step 1: Card 2 slides in over Card 1
         tl.to(
@@ -315,6 +318,85 @@ export const Services: React.FC = () => {
 
     return () => {
       ctx.revert();
+      triggerRef.current = null;
+    };
+  }, []);
+
+  const hashToCardIndex = (hash: string): number | null => {
+    const clean = hash.replace(/^#/, '').toLowerCase().trim();
+    if (['service-villas', 'villas', 'independent-villas'].includes(clean)) return 0;
+    if (['service-houses', 'houses', 'individual-houses'].includes(clean)) return 1;
+    if (['service-apartments', 'apartments', 'building-apartments'].includes(clean)) return 2;
+    if (clean === 'services') return 0;
+    return null;
+  };
+
+  const scrollToCard = (index: number) => {
+    let trigger = triggerRef.current;
+    if (!trigger) {
+      ScrollTrigger.refresh();
+      trigger = triggerRef.current;
+    }
+
+    if (trigger && typeof trigger.start === 'number' && typeof trigger.end === 'number') {
+      const progressMap = [0, 0.44, 0.88];
+      const targetProgress = progressMap[index] ?? 0;
+      const targetScrollY = trigger.start + (trigger.end - trigger.start) * targetProgress;
+      window.scrollTo({
+        top: Math.round(targetScrollY),
+        behavior: 'smooth',
+      });
+    } else {
+      const targetId = services[index] ? `service-${services[index].id}` : 'services';
+      const el = document.getElementById(targetId) || document.getElementById('services');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  useEffect(() => {
+    const handleHashNavigation = () => {
+      const hash = window.location.hash;
+      if (!hash) return;
+      const cardIndex = hashToCardIndex(hash);
+      if (cardIndex !== null) {
+        setTimeout(() => {
+          ScrollTrigger.refresh();
+          scrollToCard(cardIndex);
+        }, 250);
+      }
+    };
+
+    handleHashNavigation();
+    window.addEventListener('hashchange', handleHashNavigation);
+
+    const handleLinkClick = (e: MouseEvent) => {
+      const link = (e.target as HTMLElement).closest('a');
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      const match = href.match(/#(service-[a-z]+|villas|houses|apartments|independent-villas|individual-houses|building-apartments|services)/i);
+      if (match) {
+        const cardIndex = hashToCardIndex(match[0]);
+        if (cardIndex !== null) {
+          const currentPath = window.location.pathname;
+          if (currentPath === '/' || currentPath === '') {
+            e.preventDefault();
+            history.pushState(null, '', match[0]);
+            ScrollTrigger.refresh();
+            scrollToCard(cardIndex);
+          }
+        }
+      }
+    };
+
+    document.addEventListener('click', handleLinkClick);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashNavigation);
+      document.removeEventListener('click', handleLinkClick);
     };
   }, []);
 
@@ -340,6 +422,7 @@ export const Services: React.FC = () => {
           {services.map((item, index) => (
             <article
               key={item.id}
+              id={`service-${item.id}`}
               ref={(el) => {
                 cardsRef.current[index] = el;
               }}

@@ -239,16 +239,6 @@ export const PrintAdsSection: React.FC = () => {
 
         {/* Carousel Slider with Navigation Arrows */}
         <div className="print-ads-carousel-wrapper">
-          {/* Left Arrow Button */}
-          <button
-            type="button"
-            className="print-ads-nav-btn print-ads-nav-prev"
-            onClick={handleScrollLeft}
-            aria-label="Scroll to previous ads"
-          >
-            <ArrowLeft size={20} strokeWidth={2.2} />
-          </button>
-
           {/* Draggable Cards Track */}
           <div
             ref={trackRef}
@@ -261,6 +251,17 @@ export const PrintAdsSection: React.FC = () => {
             aria-label="Newspaper advertisements carousel"
             tabIndex={0}
           >
+            {/* Left Arrow Button */}
+            <button
+              type="button"
+              className="print-ads-nav-btn print-ads-nav-prev"
+              onClick={handleScrollLeft}
+              onMouseDown={(e) => e.stopPropagation()}
+              aria-label="Scroll to previous ads"
+            >
+              <ArrowLeft size={20} strokeWidth={2.2} />
+            </button>
+
             {printAds.map((ad, idx) => (
               <article
                 key={ad.id}
@@ -317,17 +318,18 @@ export const PrintAdsSection: React.FC = () => {
                 </div>
               </article>
             ))}
-          </div>
 
-          {/* Right Arrow Button */}
-          <button
-            type="button"
-            className="print-ads-nav-btn print-ads-nav-next"
-            onClick={handleScrollRight}
-            aria-label="Scroll to next ads"
-          >
-            <ArrowRight size={20} strokeWidth={2.2} />
-          </button>
+            {/* Right Arrow Button */}
+            <button
+              type="button"
+              className="print-ads-nav-btn print-ads-nav-next"
+              onClick={handleScrollRight}
+              onMouseDown={(e) => e.stopPropagation()}
+              aria-label="Scroll to next ads"
+            >
+              <ArrowRight size={20} strokeWidth={2.2} />
+            </button>
+          </div>
         </div>
       </div>
 

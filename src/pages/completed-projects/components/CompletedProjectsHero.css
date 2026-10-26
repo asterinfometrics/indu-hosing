@@ -11,6 +11,7 @@
   align-items: center;
   overflow: hidden;
   box-sizing: border-box;
+  padding: 0 60px 60px;
 }
 
 /* Navbar Wrapper */
@@ -215,10 +216,14 @@
    ========================================================================== */
 
 @media (max-width: 1024px) {
+  .completed-hero-section {
+    padding: 0 40px 48px;
+  }
+
   .completed-hero-container {
     grid-template-columns: 1fr;
     gap: 48px;
-    padding: 0 40px 60px;
+    padding: 0;
   }
 
   .completed-hero-content {
@@ -236,8 +241,12 @@
 }
 
 @media (max-width: 768px) {
+  .completed-hero-section {
+    padding: 0 20px 40px;
+  }
+
   .completed-hero-container {
-    padding: 0 20px 50px;
+    padding: 0;
   }
 
   .completed-hero-title {
@@ -270,8 +279,12 @@
 }
 
 @media (max-width: 480px) {
+  .completed-hero-section {
+    padding: 0 16px 32px;
+  }
+
   .completed-hero-container {
-    padding: 0 20px 36px;
+    padding: 0;
     gap: 32px;
     margin-top: 10px;
     margin-bottom: 24px;

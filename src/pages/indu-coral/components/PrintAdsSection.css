@@ -5,7 +5,7 @@
 .print-ads-section {
   width: 100%;
   background-color: #ffffff;
-  padding: 80px 60px;
+  padding: 80px 0px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
 
 .print-ads-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1123px;
   box-sizing: border-box;
   position: relative;
 }
@@ -97,10 +97,10 @@
   position: absolute;
   top: 38%;
   transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 31%;
-  background-color: #F5F5F5;
+  background-color: #ffffff;
   border: 1px solid #D6E6F5;
   color: var(--color-primary, #0A63AD);
   display: flex;
@@ -108,17 +108,17 @@
   justify-content: center;
   cursor: pointer;
   z-index: 15;
-  box-shadow: 0 4px 14px rgba(10, 99, 173, 0.08);
+  box-shadow: 0 4px 16px rgba(10, 99, 173, 0.14);
   transition: all 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
   outline: none;
 }
 
 .print-ads-nav-prev {
-  left: -52px;
+  left: -60px;
 }
 
 .print-ads-nav-next {
-  right: -52px;
+  right: -60px;
 }
 
 .print-ads-nav-btn:hover {
@@ -168,9 +168,10 @@
    ========================================================================== */
 
 .print-ad-card {
-  flex: 0 0 calc((100% - (3 * 24px)) / 4);
-  width: calc((100% - (3 * 24px)) / 4);
-  min-width: 250px;
+  flex: 0 0 calc((100% - (2 * 24px)) / 3);
+  width: calc((100% - (2 * 24px)) / 3);
+  max-width: 360px;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
   outline: none;
@@ -374,11 +375,11 @@
   }
 
   .print-ads-nav-prev {
-    left: -12px;
+    left: 14px;
   }
 
   .print-ads-nav-next {
-    right: -12px;
+    right: 14px;
   }
 }
 

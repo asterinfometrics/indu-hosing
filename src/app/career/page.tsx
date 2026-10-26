@@ -5,7 +5,7 @@ import { Footer } from '@/components/Footer';
 
 export default function CareerPage() {
     return (
-        <div className="career-page" style={{ width: '100%', minHeight: '100vh', backgroundColor: '#ffffff' }}>
+        <div className="Career-page" style={{ width: '100%', minHeight: '100vh', backgroundColor: '#ffffff' }}>
             <CareerHero />
             <WhyPartner />
             <main id="openings">

@@ -11,11 +11,11 @@ const milestones: Milestone[] = [
   {
     title: 'Where it started',
     period: '2000',
-    description: "Shri S.P. Babu Vijay founded Indu Housing on one principle: honest advice over hard selling. Twenty-three years later, that principle hasn't changed."
+    description: "Shri S.P. Babu Vijay founded Indu Housing on one principle: honest advice over hard selling. 25+ Years later, that principle hasn't changed."
   },
   {
     title: 'Homes across the City',
-    period: '2000 – 2025',
+    period: '2000 – Today',
     description: '39 residential projects delivered across Chennai: villas, individual houses and apartments. Each one is planned and built with our in-house civil engineers and architects.'
   },
   {

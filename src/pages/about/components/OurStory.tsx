@@ -47,7 +47,7 @@ export const OurStory: React.FC = () => {
                 <div className="our-story-quote-bottom">
                   <div className="our-story-quote-divider" />
                   <div className="our-story-author">
-                    <h4 className="our-story-author-role">S.P.Babu Vijay</h4>
+                    <h4 className="our-story-author-role">S.P. Babu Vijay</h4>
                     <p className="our-story-author-company">Managing Director</p>
                     <p className="our-story-author-company">Indu Housing Development</p>
                   </div>

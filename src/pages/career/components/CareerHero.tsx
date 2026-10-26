@@ -6,37 +6,37 @@ import Image from 'next/image';
 
 export const CareerHero: React.FC = () => {
   return (
-    <section className="career-hero-section">
+    <section className="Career-hero-section">
       {/* Background Vector Graphic */}
-      <div className="career-hero-vector-wrapper" aria-hidden="true">
+      <div className="Career-hero-vector-wrapper" aria-hidden="true">
         <Image
           src={heroVector}
           alt=""
-          className="career-hero-vector"
+          className="Career-hero-vector"
         />
-        <div className="career-hero-gradient-overlay" />
+        <div className="Career-hero-gradient-overlay" />
       </div>
 
       {/* Floating Navbar */}
-      <div className="career-hero-nav-wrapper">
-        <Navbar activePage="career" />
+      <div className="Career-hero-nav-wrapper">
+        <Navbar activePage="Career" />
       </div>
 
       {/* Centered Foreground Hero Content */}
-      <div className="career-hero-content">
-        <h1 className="career-hero-title">
+      <div className="Career-hero-content">
+        <h1 className="Career-hero-title">
           Build Chennai&apos;s<br />
           skyline with us.
         </h1>
 
-        <p className="career-hero-subtitle">
-          A growing team of architects, engineers and project managers, based in Besant<br className="career-subtitle-break" />
-          Nagar, building homes across Chennai since 2003.
+        <p className="Career-hero-subtitle">
+          A growing team of architects, engineers and project managers, based in Besant<br className="Career-subtitle-break" />
+          Nagar, building homes across Chennai since 2000.
         </p>
 
-        <a href="#openings" className="career-hero-btn">
+        <a href="#openings" className="Career-hero-btn">
           <span>Apply Now</span>
-          <span className="career-hero-btn-icon">
+          <span className="Career-hero-btn-icon">
             <svg
               width="16"
               height="16"

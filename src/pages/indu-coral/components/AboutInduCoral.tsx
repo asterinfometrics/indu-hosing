@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Calendar,
 } from 'lucide-react';
-import patternVector from '../../../assets/indu-coral/pattern-vector.svg';
+import faqPattern from '../../../assets/home/faq-pattern.svg';
 import logoWhite from '../../../assets/logo/logo-white.png';
 import './AboutInduCoral.css';
 import Image from 'next/image';
@@ -94,9 +94,13 @@ export const AboutInduCoral: React.FC = () => {
           {/* Card 1: Book your site visit */}
           <div
             className="coral-cta-card site-visit-card"
-            style={{ '--pattern-url': `url(${patternVector})` } as React.CSSProperties}
+            style={{ '--pattern-url': `url(${faqPattern.src})` } as React.CSSProperties}
           >
-            <div className="coral-cta-pattern" aria-hidden="true" />
+            <div
+              className="coral-cta-pattern"
+              style={{ backgroundImage: `url(${faqPattern.src})` }}
+              aria-hidden="true"
+            />
             <div className="coral-cta-content">
               <div className="coral-calendar-icon-box" aria-hidden="true">
                 <Calendar size={24} color="#0A63AD" strokeWidth={2.2} />
@@ -129,9 +133,13 @@ export const AboutInduCoral: React.FC = () => {
           {/* Card 2: Talk to our team */}
           <div
             className="coral-cta-card team-contact-card"
-            style={{ '--pattern-url': `url(${patternVector})` } as React.CSSProperties}
+            style={{ '--pattern-url': `url(${faqPattern.src})` } as React.CSSProperties}
           >
-            <div className="coral-cta-pattern" aria-hidden="true" />
+            <div
+              className="coral-cta-pattern"
+              style={{ backgroundImage: `url(${faqPattern.src})` }}
+              aria-hidden="true"
+            />
             <div className="coral-cta-content">
               <div className="coral-team-badge">TALK TO OUR TEAM</div>
               <p className="coral-team-desc">
@@ -147,6 +155,8 @@ export const AboutInduCoral: React.FC = () => {
                 <a href="mailto:marketing@induhousing.com" className="coral-team-email">
                   marketing@induhousing.com
                 </a>
+                <br />
+                <p style={{ color: '#0A63AD', fontWeight: '600' }}>+91 9087 990022</p>
               </div>
             </div>
           </div>

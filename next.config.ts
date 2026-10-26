@@ -6,6 +6,18 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/Career',
+        destination: '/career',
+      },
+      {
+        source: '/Careers',
+        destination: '/career',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

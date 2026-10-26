@@ -136,7 +136,7 @@ export const Footer = () => {
                 <Link href="/completed-projects" className="footer-link">Completed Projects</Link>
               </li>
               <li>
-                <Link href="/indu-coral" className="footer-link">On going Projects</Link>
+                <Link href="/indu-coral" className="footer-link">Ongoing Projects</Link>
               </li>
             </ul>
           </div>
@@ -146,13 +146,13 @@ export const Footer = () => {
             <h4 className="footer-col-title">Services</h4>
             <ul className="footer-links">
               <li>
-                <Link href="/#services" className="footer-link">Independent Villas</Link>
+                <Link href="/#service-villas" className="footer-link">Independent Villas</Link>
               </li>
               <li>
-                <Link href="/#services" className="footer-link">Individual Houses</Link>
+                <Link href="/#service-houses" className="footer-link">Individual Houses</Link>
               </li>
               <li>
-                <Link href="/#services" className="footer-link">Building Apartments</Link>
+                <Link href="/#service-apartments" className="footer-link">Building Apartments</Link>
               </li>
             </ul>
           </div>
@@ -163,7 +163,7 @@ export const Footer = () => {
             <div className="footer-contact-info">
               <div className="footer-contact-row">
                 <a href="tel:+91908790022" className="footer-contact-link">
-                  +91 9087 90022
+                  +91 9087 990022
                 </a>
                 <span className="footer-contact-sep">/</span>
                 <a href="tel:+919884085599" className="footer-contact-link">

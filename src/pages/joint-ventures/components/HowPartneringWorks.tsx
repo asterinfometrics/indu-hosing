@@ -33,7 +33,7 @@ const steps: PartnerStep[] = [
   {
     number: '05',
     title: 'Handover',
-    description: 'We build with the same quality standards as every Indu Housing project.'
+    description: 'We deliver every home with the same commitment to quality and excellence.'
   }
 ];
 

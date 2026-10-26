@@ -105,7 +105,7 @@ export const CompletedProjectsHero: React.FC = () => {
           </div>
 
           <h1 className="completed-hero-title">
-            39 homes across Chennai,<br />
+            39 Projects across Chennai,<br />
             each one still standing
           </h1>
 

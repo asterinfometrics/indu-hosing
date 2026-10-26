@@ -14,7 +14,7 @@ interface NavbarProps {
   | 'about'
   | 'projects'
   | 'partner'
-  | 'career'
+  | 'Career'
   | 'contact';
 }
 
@@ -78,7 +78,7 @@ export const Navbar = ({ activePage }: NavbarProps) => {
         ? 'partner'
         : pathname.startsWith('/contact')
           ? 'contact'
-          : pathname.startsWith('/career')
+          : pathname.startsWith('/career') || pathname.startsWith('/Career')
             ? 'career'
             : pathname.startsWith('/indu-coral') ||
               pathname.startsWith('/completed-projects')
@@ -223,9 +223,9 @@ export const Navbar = ({ activePage }: NavbarProps) => {
           <li className="navbar-item">
             <Link
               href="/career"
-              className={`navbar-link ${currentActive === 'career' ? 'active' : ''}`}
+              className={`navbar-link ${currentActive === 'career' || currentActive === 'Career' ? 'active' : ''}`}
             >
-              Career
+              Careers
             </Link>
           </li>
         </ul>
@@ -323,10 +323,10 @@ export const Navbar = ({ activePage }: NavbarProps) => {
 
           <Link
             href="/career"
-            className={`mobile-nav-link ${currentActive === 'career' ? 'active' : ''}`}
+            className={`mobile-nav-link ${currentActive === 'career' || currentActive === 'Career' ? 'active' : ''}`}
             onClick={() => setMobileMenuOpen(false)}
           >
-            Career
+            Careers
           </Link>
 
           <Link

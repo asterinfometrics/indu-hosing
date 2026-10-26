@@ -100,7 +100,7 @@ export const CompletedProjects = () => {
       yearOrStatus: 'In progress',
       categoryTag: 'Multi-unit residential project',
       image: prJayanthika,
-      badge: 'In progress',
+      badge: 'Completed',
     },
   ];
 
@@ -153,11 +153,6 @@ export const CompletedProjects = () => {
                       <Home size={15} className="project-spec-icon" />
                     )}
                     <span>{project.type}</span>
-                  </div>
-
-                  <div className="project-spec-item">
-                    <VectorPolygon size={15} className="project-spec-icon" />
-                    <span>{project.area}</span>
                   </div>
 
                   <div className="project-spec-item">

@@ -60,7 +60,7 @@ export const WhyPartner: React.FC = () => {
             <p className="why-partner-subtitle">
               Honest guidance, quality construction and a track record you can verify, across every home we build.
             </p>
-            <a href="#jv-partner-form" className="btn-primary-blue why-partner-cta-btn">
+            <a href="/contact" className="btn-primary-blue why-partner-cta-btn">
               <span>Schedule a Call</span>
               <span className="btn-icon-box" aria-hidden="true">
                 <svg

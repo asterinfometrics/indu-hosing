@@ -1,1 +1,0 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,34597,(o,t,n)=>{let i="/indu-coral/components/ConstructionUpdates";(window.__NEXT_P=window.__NEXT_P||[]).push([i,()=>o.r(71832)]),t.hot&&t.hot.dispose(function(){window.__NEXT_P.push([i])})}]);

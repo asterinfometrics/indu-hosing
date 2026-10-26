@@ -158,7 +158,7 @@ export const Hero = () => {
         <p className="hero-subtitle">
           Independent villas, individual houses &amp; apartments across Chennai –
           <br className="hero-break" />
-          38 projects delivered with honest guidance at every step.
+          39 projects delivered with honest guidance at every step.
         </p>
 
         <Link

@@ -26,7 +26,7 @@ export const WhyChooseUs = () => {
       id: 4,
       title: 'Reliable Project Delivery',
       description:
-        '39 homes completed since 2000, with honest updates throughout.',
+        '39 Projects completed since 2000, with honest updates throughout.',
     },
   ];
 
@@ -77,7 +77,7 @@ export const WhyChooseUs = () => {
               </div>
 
               <p className="why-us-rating-sub">
-                39 homes Delivered Since 2000
+                39 Projects Delivered Since 2000
               </p>
             </div>
           </div>

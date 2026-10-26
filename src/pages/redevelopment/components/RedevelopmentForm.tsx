@@ -138,7 +138,7 @@ export const RedevelopmentForm: React.FC = () => {
   };
 
   return (
-    <section className="redevelopment-form-section" id="redevelopment-form">
+    <section className="redevelopment-form-section" id="rd-partner-form">
       <div className="redevelopment-form-container">
         {/* Section Header */}
         <div className="redevelopment-form-header">

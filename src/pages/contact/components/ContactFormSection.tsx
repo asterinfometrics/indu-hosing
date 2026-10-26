@@ -122,7 +122,7 @@ export const ContactFormSection: React.FC = () => {
                 </div>
                 <div className="contact-info-text-group">
                   <span className="contact-info-label">Phone</span>
-                  <a href="tel:+919841885651" className="contact-info-val">+91 98418 85651</a>
+                  <a href="tel:+919841885651" className="contact-info-val">+91 90879 90022</a>
                   <a href="tel:+919841222449" className="contact-info-val">+91 98412 22449</a>
                 </div>
               </div>
@@ -135,7 +135,7 @@ export const ContactFormSection: React.FC = () => {
                 <div className="contact-info-text-group">
                   <span className="contact-info-label">E-Mail</span>
                   <a href="mailto:info@induhousing.com" className="contact-info-val">info@induhousing.com</a>
-                  <a href="mailto:induhousing@yahoo.com" className="contact-info-val">induhousing@yahoo.com</a>
+                  <a href="mailto:induhousing@yahoo.com" className="contact-info-val">marketing@induhousing.com</a>
                 </div>
               </div>
 

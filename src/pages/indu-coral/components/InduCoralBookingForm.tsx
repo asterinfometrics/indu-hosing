@@ -235,7 +235,6 @@ export const InduCoralBookingForm: React.FC = () => {
                         <option value="2BHK">2BHK</option>
                         <option value="3BHK">3BHK</option>
                         <option value="3BHK Luxury">3BHK Luxury</option>
-                        <option value="Penthouse / Duplex">Penthouse / Duplex</option>
                       </select>
                       <span className="coral-select-chevron" aria-hidden="true">
                         <ChevronDown size={18} strokeWidth={2.2} />
@@ -303,7 +302,7 @@ export const InduCoralBookingForm: React.FC = () => {
                       className="btn-primary-blue coral-booking-submit-btn"
                       disabled={isSubmitting}
                     >
-                      <span>{isSubmitting ? 'Booking Visit...' : "Let's Plan Your Site Visit"}</span>
+                      <span>{isSubmitting ? 'Booking Visit...' : "Book Site Visit"}</span>
                       <span className="btn-icon-box">
                         <ArrowRight size={15} strokeWidth={2.2} />
                       </span>

@@ -68,7 +68,7 @@ export const AboutHero: React.FC = () => {
                   <span className="about-stat-heading-white">Completed projects</span>
                 </div>
                 <div className="about-stat-bottom">
-                  <div className="about-stat-number-white">39+</div>
+                  <div className="about-stat-number-white">39</div>
                   <div className="about-stat-desc-white">
                     Villas, houses and apartments delivered across Chennai.
                   </div>

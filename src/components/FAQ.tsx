@@ -40,7 +40,7 @@ export const FAQ = () => {
       id: 4,
       question: '4. Can I customize the design of my home?',
       answer:
-        'Absolutely. Our in-house civil engineers and architecture team work with you to tailor floor plans, room configurations, and material finishes according to your taste and Vaastu requirements.',
+        'Absolutely. Our in-house civil engineers and architecture team work with you to tailor floor plans, room configurations, and material finishes according to your taste and Vastu requirements.',
     },
     {
       id: 5,
@@ -86,7 +86,7 @@ export const FAQ = () => {
             {/* Pattern Overlay */}
             <div
               className="faq-cta-pattern"
-              style={{ backgroundImage: `url(${faqPattern})` }}
+              style={{ backgroundImage: `url(${faqPattern.src})` }}
               aria-hidden="true"
             />
 

@@ -6,11 +6,11 @@ import { ApplySection } from './components/ApplySection';
 
 export const Career: React.FC = () => {
   return (
-    <div className="career-page" style={{ width: '100%', minHeight: '100vh', backgroundColor: '#ffffff' }}>
+    <div className="Career-page" style={{ width: '100%', minHeight: '100vh', backgroundColor: '#ffffff' }}>
       {/* Hero Section */}
       <CareerHero />
 
-      <WhyPartner/>
+      <WhyPartner />
 
       {/* Main Content Sections */}
       <main id="openings">

@@ -300,7 +300,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
   {
     id: 'harithra',
     title: 'Harithra',
-    location: 'Madippakkam, Chennai',
+    location: 'Madipakkam, Chennai',
     category: 'residential',
     propertyType: 'Individual house',
     propertyTypeIcon: 'house',

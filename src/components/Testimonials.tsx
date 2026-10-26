@@ -48,7 +48,7 @@ export const Testimonials = () => {
         '"Indu Housing\'s team was courteous and professional - on-time work, with quality craftsmanship and good after-sale service."',
       name: 'Thirumalai Ramalingam',
       location: 'Chennai',
-      avatar: avatar1,
+      avatar: avatar2,
     },
     {
       id: 'r1-5',
@@ -75,7 +75,7 @@ export const Testimonials = () => {
         '"What stood out was how often they checked in - not just at milestones, but whenever something needed a decision from us."',
       name: 'Individual house homeowner,',
       location: 'Velachery',
-      avatar: avatar3,
+      avatar: avatar4,
     },
     {
       id: 'r2-3',
@@ -91,7 +91,7 @@ export const Testimonials = () => {
         '"Building on our own plot meant a lot of decisions were on us, but they guided us through each one without ever making us feel rushed."',
       name: 'Individual house homeowner',
       location: 'Anna Nagar',
-      avatar: avatar1,
+      avatar: avatar4,
     },
     {
       id: 'r2-5',
@@ -99,7 +99,7 @@ export const Testimonials = () => {
         '"From day one they were completely upfront about timelines and costs. Not a single hidden charge when we took handover."',
       name: 'Individual house homeowner',
       location: 'Anna Nagar',
-      avatar: avatar2,
+      avatar: avatar5,
     },
   ];
 
