@@ -190,6 +190,13 @@
   justify-content: center;
 }
 
+.why-us-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
 .why-us-feature-title {
   font-family: var(--font-title);
   font-size: 20px;
@@ -289,6 +296,11 @@
   .why-us-icon-badge {
     width: 36px;
     height: 36px;
+  }
+
+  .why-us-icon-img {
+    width: 20px;
+    height: 20px;
   }
 
   .why-us-feature-title {
