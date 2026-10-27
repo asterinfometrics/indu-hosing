@@ -97,7 +97,7 @@ export const CompletedProjects = () => {
       type: 'Apartment',
       typeIcon: 'apartment',
       area: '13,845 sqft',
-      yearOrStatus: 'In progress',
+      yearOrStatus: '2008',
       categoryTag: 'Multi-unit residential project',
       image: prJayanthika,
       badge: 'Completed',

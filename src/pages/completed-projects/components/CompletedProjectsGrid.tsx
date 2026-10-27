@@ -150,7 +150,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'commercial',
     propertyType: 'Commercial',
     propertyTypeIcon: 'commercial',
-    year: 'In progress',
+    year: '2013',
     tag: 'Commercial complex with retail frontage',
     image: aksharaImg
   },
@@ -183,7 +183,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'commercial',
     propertyType: 'Commercial',
     propertyTypeIcon: 'commercial',
-    year: 'In progress',
+    year: '2010',
     tag: 'Commercial complex with retail frontage',
     image: shriwinImg
   },
@@ -216,7 +216,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'residential',
     propertyType: 'Individual house',
     propertyTypeIcon: 'house',
-    year: 'In progress',
+    year: '2008',
     tag: 'Multi-unit residential project',
     image: jayanthikaImg
   },
@@ -249,7 +249,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'residential',
     propertyType: 'Individual house',
     propertyTypeIcon: 'house',
-    year: 'In progress',
+    year: '2006',
     tag: '10-duplex individual house cluster',
     image: saiSaketaImg
   },
@@ -282,7 +282,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'residential',
     propertyType: 'Residential',
     propertyTypeIcon: 'apartment',
-    year: 'In progress',
+    year: '2005',
     tag: 'G+1 residential building in Choolaimedu',
     image: sriKrishImg
   },
@@ -315,7 +315,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'residential',
     propertyType: 'Residential',
     propertyTypeIcon: 'apartment',
-    year: 'In progress',
+    year: '2004',
     tag: 'G+1 residential building in Madipakkam',
     image: sobithaImg
   },
@@ -326,7 +326,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'residential',
     propertyType: 'Residential',
     propertyTypeIcon: 'apartment',
-    year: 'In progress',
+    year: '2003',
     tag: 'Commercial complex with retail frontage',
     image: iyyapanthangalImg
   },
@@ -381,7 +381,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'residential',
     propertyType: 'Residential',
     propertyTypeIcon: 'apartment',
-    year: 'In progress',
+    year: '2002',
     tag: 'G+1 residential building in Perungudi',
     image: perungudiImg
   },
@@ -414,7 +414,7 @@ const initialCompletedProjects: CompletedProjectItem[] = [
     category: 'residential',
     propertyType: 'Individual house',
     propertyTypeIcon: 'house',
-    year: 'In progress',
+    year: '2001',
     tag: 'Duplex individual house in Perumbakkam',
     image: perumbakkamImg
   }
