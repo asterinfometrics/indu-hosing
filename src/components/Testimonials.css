@@ -104,10 +104,6 @@
   animation: scrollRight 42s linear infinite;
 }
 
-.testimonials-track-wrapper:hover .testimonials-group {
-  animation-play-state: paused;
-}
-
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);

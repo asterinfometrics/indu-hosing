@@ -229,11 +229,11 @@ export const AboutForm: React.FC = () => {
                         required
                       >
                         <option value="" disabled hidden>Select Project Type</option>
-                        <option value="luxury-villa">Standalone Luxury Villa</option>
-                        <option value="residential-apartment">Residential Apartment</option>
-                        <option value="independent-home">Independent Home</option>
-                        <option value="joint-venture">Joint Venture / Plot Promotion</option>
-                        <option value="consultation">General Consultation &amp; Architectural Planning</option>
+                        <option value="luxury-villa">Independent Villas</option>
+                        <option value="residential-apartment">Individual House</option>
+                        <option value="independent-home">Building Apartments</option>
+                        <option value="joint-venture">Joint Venture / Redevelopment</option>
+                        <option value="consultation">General Consultation</option>
                       </select>
                       <span className="about-select-chevron" aria-hidden="true">
                         <ChevronDown size={18} strokeWidth={2.2} />

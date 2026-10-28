@@ -74,7 +74,7 @@
   color: var(--text-dark);
   line-height: 1.25;
   letter-spacing: -0.025em;
-  margin: 0 0 48px 0;
+  margin: 0 0 30px 0;
 }
 
 .completed-hero-btn {
@@ -251,7 +251,6 @@
 
   .completed-hero-title {
     font-size: 32px;
-    margin-bottom: 24px;
   }
 
   .completed-hero-collage {
@@ -298,7 +297,6 @@
   .completed-hero-title {
     font-size: 26px;
     line-height: 1.25;
-    margin-bottom: 24px;
   }
 
   .completed-hero-collage {

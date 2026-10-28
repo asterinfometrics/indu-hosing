@@ -324,16 +324,33 @@
 }
 
 .coral-team-email {
+  display: inline-block;
   font-family: var(--font-body);
   font-size: 18px;
   font-weight: 700;
   color: #111827;
   text-decoration: none;
   word-break: break-all;
+  margin-bottom: 8px;
   transition: color 0.2s ease;
 }
 
 .coral-team-email:hover {
+  color: var(--color-primary, #0A63AD);
+}
+
+.coral-team-phone {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.coral-team-phone:hover {
   color: var(--color-primary, #0A63AD);
 }
 

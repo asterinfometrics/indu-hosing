@@ -30,7 +30,8 @@ const projectVideos: ProjectVideoItem[] = [
     title: 'Chand',
     location: 'Besant Nagar, Chennai',
     image: chandImg,
-    youtubeUrl: 'https://youtu.be/jPp0rIX-rr0?si=rp-FYThQ02A4vpSr',
+    youtubeUrl: 'https://youtu.be/ujz0ExZCLyM?si=TLZm_NbkLQAGbaGn',
+
     isFeatured: true
   },
   {
@@ -38,7 +39,8 @@ const projectVideos: ProjectVideoItem[] = [
     title: 'Diamond',
     location: 'Besant Nagar, Chennai',
     image: diamondImg,
-    youtubeUrl: 'https://youtu.be/ujz0ExZCLyM?si=TLZm_NbkLQAGbaGn'
+    youtubeUrl: 'https://youtu.be/jPp0rIX-rr0?si=rp-FYThQ02A4vpSr',
+
   }
 ];
 

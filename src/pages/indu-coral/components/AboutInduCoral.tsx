@@ -155,8 +155,9 @@ export const AboutInduCoral: React.FC = () => {
                 <a href="mailto:marketing@induhousing.com" className="coral-team-email">
                   marketing@induhousing.com
                 </a>
-                <br />
-                <p style={{ color: '#0A63AD', fontWeight: '600' }}>+91 9087 990022</p>
+                <a href="tel:+919087990022" className="coral-team-phone">
+                  +91 9087 990022
+                </a>
               </div>
             </div>
           </div>

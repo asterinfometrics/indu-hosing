@@ -211,11 +211,11 @@ export const Contact = () => {
                       <option value="" disabled hidden>
                         Select project type
                       </option>
-                      <option value="luxury-villa">Standalone Luxury Villa</option>
-                      <option value="residential-apartment">Residential Apartment</option>
-                      <option value="independent-home">Independent Home</option>
-                      <option value="joint-venture">Joint Venture / Plot Promotion</option>
-                      <option value="consultation">General Consultation &amp; Architectural Planning</option>
+                      <option value="luxury-villa">Independent Villas</option>
+                      <option value="residential-apartment">Individual House</option>
+                      <option value="independent-home">Building Apartments</option>
+                      <option value="joint-venture">Joint Venture / Redevelopment</option>
+                      <option value="consultation">General Consultation</option>
                     </select>
                     <span className="contact-select-chevron" aria-hidden="true">
                       <ChevronDown size={17} strokeWidth={2.2} />
