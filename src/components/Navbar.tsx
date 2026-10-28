@@ -14,6 +14,7 @@ interface NavbarProps {
   | 'about'
   | 'projects'
   | 'partner'
+  | 'career'
   | 'Career'
   | 'contact';
 }

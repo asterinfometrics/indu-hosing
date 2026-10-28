@@ -361,11 +361,11 @@
   }
 
   .coral-booking-submit-row {
-    justify-content: stretch;
+    display: flex;
+    justify-content: center;
   }
 
   .coral-booking-submit-btn {
-    width: 100%;
     justify-content: center;
   }
 }

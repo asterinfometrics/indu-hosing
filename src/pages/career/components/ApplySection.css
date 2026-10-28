@@ -348,10 +348,6 @@
     flex-direction: column;
     align-items: stretch;
   }
-
-  .apply-submit-btn {
-    width: 100%;
-  }
 }
 
 @media (max-width: 480px) {

@@ -21,7 +21,7 @@ const stats: StatItem[] = [
     description: 'A verified track record across Chennai'
   },
   {
-    number: '3,84,000+',
+    number: '4,00,000+',
     title: 'Sq. ft. delivered',
     description: 'Real construction, real scale'
   },

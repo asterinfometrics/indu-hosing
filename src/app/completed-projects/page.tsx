@@ -1,5 +1,6 @@
 import { CompletedProjectsHero } from '@/pages/completed-projects/components/CompletedProjectsHero';
 import { CompletedProjectsGrid } from '@/pages/completed-projects/components/CompletedProjectsGrid';
+import { ProjectVideos } from '@/pages/completed-projects/components/ProjectVideos';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { Process } from '@/components/Process';
 import { FAQ } from '@/components/FAQ';
@@ -12,6 +13,7 @@ export default function CompletedProjectsPage() {
             <CompletedProjectsHero />
             <main>
                 <CompletedProjectsGrid />
+                <ProjectVideos />
                 <WhyChooseUs />
                 <Process />
                 <FAQ />

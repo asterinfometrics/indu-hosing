@@ -242,12 +242,10 @@
   }
 
   .ongoing-actions .btn-primary-blue {
-    width: 100%;
     justify-content: space-between;
   }
 
   .ongoing-actions .btn-secondary {
-    width: 100%;
     justify-content: center;
   }
 

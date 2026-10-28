@@ -324,10 +324,6 @@
   .redevelopment-form-actions {
     justify-content: stretch;
   }
-
-  .redevelopment-submit-btn {
-    width: 100%;
-  }
 }
 
 @media (max-width: 480px) {

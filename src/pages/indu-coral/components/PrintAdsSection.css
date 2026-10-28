@@ -476,7 +476,8 @@
   }
 
   .print-ads-view-all-btn {
-    width: 100%;
+    align-self: center;
+    margin: 0 auto;
     justify-content: center;
   }
 }

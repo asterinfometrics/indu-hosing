@@ -79,7 +79,7 @@ export const About = () => {
 
               <div className="about-stat-content">
                 <span className="about-stat-number">
-                  3.75L+
+                  4L+
                 </span>
                 <span className="about-stat-label">
                   Sq. Ft. Delivered

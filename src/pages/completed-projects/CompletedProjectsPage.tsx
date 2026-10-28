@@ -1,6 +1,7 @@
 import React from 'react';
 import { CompletedProjectsHero } from './components/CompletedProjectsHero';
 import { CompletedProjectsGrid } from './components/CompletedProjectsGrid';
+import { ProjectVideos } from './components/ProjectVideos';
 import { WhyChooseUs } from '../../components/WhyChooseUs';
 import { Process } from '../../components/Process';
 import { FAQ } from '../../components/FAQ';
@@ -16,6 +17,7 @@ export const CompletedProjectsPage: React.FC = () => {
             {/* Main page content */}
             <main>
                 <CompletedProjectsGrid />
+                <ProjectVideos />
                 <WhyChooseUs />
                 <Process />
                 <FAQ />

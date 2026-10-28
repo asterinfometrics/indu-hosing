@@ -190,7 +190,7 @@ export default function GallerySection() {
                 </div>
 
                 {filteredPhotos.length > 0 && (
-                    <div className="coral-booking-submit-row">
+                    <div className="gallery-footer coral-booking-submit-row">
                         <Link
                             href="/indu-coral/gallery"
                             className="btn-primary-blue coral-booking-submit-btn"
