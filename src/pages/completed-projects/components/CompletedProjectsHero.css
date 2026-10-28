@@ -138,10 +138,6 @@
   animation: marqueeScrollDown 32s linear infinite;
 }
 
-.completed-hero-collage:hover .marquee-track {
-  animation-play-state: paused;
-}
-
 @keyframes marqueeScrollUp {
   0% {
     transform: translateY(0);
